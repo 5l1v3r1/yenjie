@@ -17,7 +17,7 @@ build() {
 
         cd $PKGMK_SOURCE_DIR
         if [ ! -d "$name" ]; then
-                git clone -b v$version https://github.com/$(name//-utils/}/$name.git $name
+                git clone -b v$version https://github.com/${name//-utils/}/$name.git $name
                 cd $name
                 if [ `git rev-parse HEAD` != $sversion ]; then
                         git checkout $sversion
