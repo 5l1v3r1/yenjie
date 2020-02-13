@@ -12,7 +12,7 @@ f:f4ce126c26da596c8fcddfd75369e279:hashcat/.signature
 f:cbb3364c68c8c8263d36649abe1c2674:hashcat/Pkgfile
 f:af70bf411e725167d9ba7fd0dd63943f:hashcat-utils/.footprint
 f:f4ce126c26da596c8fcddfd75369e279:hashcat-utils/.signature
-f:085941eac3734d42561c89703c771d31:hashcat-utils/Pkgfile
+f:29028d2016664b15b3834c6feb2c77b1:hashcat-utils/Pkgfile
 f:f4ce126c26da596c8fcddfd75369e279:gnuradio/.signature
 f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
 f:f44fbe22dffbceb341d402aa45168349:gnuradio/.footprint
