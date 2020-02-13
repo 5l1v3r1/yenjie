@@ -1,0 +1,50 @@
+# Description: 	Hashcat password cracker for GPU
+# URL: 		https://hashcat.net/
+# Packager: 	Lin SiFuh
+# Maintainer: 
+# Depends on: 
+
+name=hashcat
+version=5.0.0
+sversion=5f57ab35b6f24a7890252cbf128dae2802ea6ece
+release=2
+source=()
+
+#https://hashcat.net/files/$name-$version.tar.gz
+
+build() {
+
+	export PREFIX="/usr"
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d "$name" ]; then
+		git clone -b v$version https://github.com/$name/$name.git $name
+		cd $name
+		if [ `git rev-parse HEAD` != $sversion ]; then
+			git checkout $sversion
+			git submodule update --init
+		fi
+	else
+		cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+	                git checkout $sversion
+			git submodule update --init
+                fi
+	fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	cd $SRC/$name
+		
+	make 
+	make DESTDIR=$PKG install
+ 	
+	find $PKG \(\
+            -iname '*readme*' -o \
+            -iname '*changelog*' -o \
+            -name '*TODO*' -o \
+            -iname '*news*' -o \
+            -iname '*license*' -o \
+            -iname '*credits*' \
+	    \) -exec rm -rf '{}' \; || true
+	rm -rf $PKG/usr/share/doc
+
+}
