@@ -5,7 +5,7 @@
 # Depends on: 	git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy doxygen cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 wxpython python3-lxml portaudio jack 
 
 name=gnuradio
-version=3.8.0.0
+version=3.9.0.0
 sversion=654bec7628ca6b47c69180e0f7042c35c1831552
 release=2
 source=(FindQwt_cmake.patch)
