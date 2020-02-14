@@ -2,7 +2,7 @@
 # URL: 		https://www.aircrack-ng.org/
 # Packager: 	Lin SiFuh
 # Maintainer: 
-# Depends on: 	autoconf automake libtool shtool openssl libgcrypt ethtool libnl gcc
+# Depends on:   libgcrypt libgpg-error ethtool libnl lz4 sqlite3 libpcap 
 
 name=aircrack-ng
 version=1.6
