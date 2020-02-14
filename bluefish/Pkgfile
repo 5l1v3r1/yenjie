@@ -1,0 +1,30 @@
+# Description:  GTK+ text editor targeted towards programmers and web designers
+# URL:          http://bluefish.openoffice.nl/
+# Packager:	Lin SiFuh
+# Maintainer:   
+# Depends on:   gtk
+
+name=bluefish
+version=2.2.11
+release=1
+source=(https://www.bennewitz.com/$name/stable/source/$name-$version.tar.gz)
+
+build() {
+
+	export PYTHON_CONFIG=/usr/bin/python3-config 
+	export PYTHON=/usr/bin/python3
+
+	cd $name-$version
+	
+	./configure --prefix=/usr --mandir=/usr/man 	\
+		    --disable-nls --with-gtk2 		\
+		    --disable-update-databases 		\
+        	    --disable-xml-catalog-update 	\
+		    --disable-spell-check
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/{doc,xml}
+
+}

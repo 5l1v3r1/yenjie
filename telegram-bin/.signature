@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uGQiIPH/W0FJpHOnAdFu+Up6mvF8TcF3UFHu3Ty++t5UDwI9ihMUfzAT9pQG7pCg0EMrNR8+6VbEeoj0fLah9w0=
+SHA256 (Pkgfile) = aab3a4e2c4c833cdb5b9c412a46d37e7205a808a5cafe2758033c205021cd143
+SHA256 (.footprint) = 91527fbcef2b2261b29c8620b7d552a981bbb1c6782019d28a6e25253dafa1f9
+SHA256 (tsetup.1.9.13.tar.xz) = bc9dcb521099461ac09812983b49a4e6c8a75088f555eceb0ac6f8578ded7a89

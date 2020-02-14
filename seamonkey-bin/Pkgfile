@@ -1,0 +1,24 @@
+# Description: 	Seamonkey Web-Browser
+# URL: 		http://www.seamonkey-project.org
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on: 
+
+name=seamonkey-bin
+version=2.49.5
+release=1
+source=(https://archive.mozilla.org/pub/${name//-bin/}/releases/$version/linux-x86_64/en-US/${name//-bin/}-$version.tar.bz2)
+
+build() {
+
+	cd ${name//-bin/}
+	install -d $PKG/opt/{lib,bin}
+	mv $SRC/${name//-bin/} $PKG/opt/lib/${name//-bin/}
+	ln -s /opt/lib/${name//-bin/}/${name//-bin/} $PKG/opt/bin/${name//-bin/}
+	mkdir -p $PKG/opt/lib/${name//-bin/}/lib
+
+	mkdir -p $PKG/opt/etc/revdep.d
+	echo "/opt/lib/${name//-bin/}" > $PKG/opt/etc/revdep.d/${name}
+
+	install -m755 -d $PKG/opt/share/pixmaps
+}

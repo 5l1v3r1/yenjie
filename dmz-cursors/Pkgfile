@@ -1,0 +1,37 @@
+# Description: 	Xcursors for HDPI screens
+# URL: 		Vanilla-DMZ
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on:  	git
+
+name=dmz-cursors
+version=0.4
+sversion=5ee8c3e47ffa0e7e271a6e13b73b05a75e16c361
+release=1
+source=()
+	
+#git clone https://github.com/ganwell/dmz-cursors
+
+build () {
+
+	cd $PKGMK_SOURCE_DIR
+	if [ ! -d "$name" ]; then
+		git clone https://github.com/ganwell/$name.git $name
+		cd $name
+		if [ `git rev-parse HEAD` != $sversion ]; then
+			git checkout $sversion
+		fi
+	else
+		cd $name
+		if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+	fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+	cd $SRC/$name
+	mkdir -p $PKG/usr/share/icons/
+	cp -rf black $PKG/usr/share/icons/DMZ-Black
+        cp -rf white $PKG/usr/share/icons/DMZ-White
+
+}

@@ -1,0 +1,21 @@
+# Description: Library for nftables Linux firewall
+# URL:         http://www.nftables.org
+# Packager:    Lin SiFuh
+# Maintainer:  
+# Depends on:  libmnl
+
+name=libnftnl
+version=20191014
+release=1
+source=(ftp://ftp.netfilter.org/pub/$name/snapshot/$name-$version.tar.bz2)
+
+build () {
+
+	cd  $name-$version
+	sh ./autogen.sh
+	
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+}

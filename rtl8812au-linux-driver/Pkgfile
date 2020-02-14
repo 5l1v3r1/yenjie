@@ -1,0 +1,38 @@
+# Description: Realtek 88192au Wirless Driver (Aircrack Mod)
+# URL:         https://github.com/aircrack-ng/rtl8812au
+# Packager:    Lin SiFuh
+# Maintainer:  
+# Depends on:  git 
+
+name=rtl8812au-linux-driver
+version=5.6.4.2
+release=1
+sversion=f9291c2bd40677b5feae597a0b01b28ad7e1da2f
+source=()
+
+# https://codeload.github.com/aircrack-ng/rtl8812au/zip/v5.6.4.2
+
+build () {
+
+	cd $PKGMK_SOURCE_DIR
+        if [ ! -d "$name" ]; then
+                git clone -b v$version https://github.com/aircrack-ng/${name//-linux-driver/}.git $name
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        else
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $SRC
+ 	cd $SRC/$name
+
+	make
+	mkdir -p $PKG/lib/modules/`uname -r`/kernel/drivers/net/wireless/
+	install -p -m 644 88XXau.ko -t $PKG/lib/modules/`uname -r`/kernel/drivers/net/wireless/
+
+}
