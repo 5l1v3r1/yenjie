@@ -1,2 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uBZGBf/OxR5DPQEOl5z0Wuzj0Sdp9RPquuXlxx5c4goJNgkg1HvmSdQjjkZflr/WiHmZHK9RffPBJQD4GswHAQo=
+RWQ0NN0w0eo0uCigWjS/eNfr0ILsDuhYkQfKzGuNf7LH4m49KOXWYnjp1DwKRu5b0vEB5WuOy224xaU/ffu8EgqhEI7Aj+nXBgI=
+SHA256 (Pkgfile) = 302bc3544d801e90c2a3425ae0aaa7b3fe50fbcded261cefc155b264c16d8315
+SHA256 (.footprint) = b039c31d842475314a76a841bd29b32b34ae699b107486e2b70b477269302edd
+SHA256 (FindQwt_cmake.patch) = ea9dba8141e44fcd440f1bfc492f45162baa99cd431340063823ecfcd997ce01
