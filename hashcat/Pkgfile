@@ -2,7 +2,7 @@
 # URL: 		https://hashcat.net/
 # Packager: 	Lin SiFuh
 # Maintainer: 
-# Depends on: 
+# Depends on: 	git
 
 name=hashcat
 version=5.0.0
