@@ -1,7 +1,7 @@
 # Description:	Skype Web plugin for Pidgin Messenger
 # URL:		http://pidgin.im/
 # Maintainer:	
-# Depends on:	pidgin 
+# Depends on:	pidgin json-glib
 
 name=pidgin-skypeweb
 version=1.5
