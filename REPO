@@ -23,9 +23,12 @@ d:xosd
 d:xconsole
 d:volk
 d:virtualbox-extpack
+d:libsepol
+d:libraw
 d:virtualbox-bin
 d:par2cmdline
 d:vanilla-dmz
+d:libselinux
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -114,6 +117,13 @@ f:8aee3638ac31aa17a58b2eaf315e8f76:virtualbox-extpack/.footprint
 f:d0a2840654b669e56808b3fbd1447ec8:virtualbox-extpack/README
 f:420545f612b63790b20d242ba85f3401:virtualbox-extpack/post-install
 f:55b5d7c98d07143743fad3d33dd8da0d:virtualbox-extpack/.signature
+f:b39ac7690facf4b44e2849602b4ef393:libsepol/.signature
+f:90db453508a100bf571a33f0da40dbff:libsepol/README
+f:68e53266ee6dd0c792c8ad4193e0ae0a:libsepol/Pkgfile
+f:5b2f84efa907527813b83608633f2b76:libsepol/.footprint
+f:fe7271674494fe1a5e3d4834ecd325c1:libraw/.footprint
+f:c4b306059a11eda4ba5269895acf636b:libraw/Pkgfile
+f:a88bd2e1e84036065b1ab5e73c1bc03c:libraw/.signature
 f:6eb0e0557be887166c444d30fe6b74d9:virtualbox-bin/vbox_build_module
 f:3ce33328d23bf16bf9589fa36aa010cd:virtualbox-bin/60-vboxdrv.rules
 f:94ff0b617f68ae239a9c4485a9378c3d:virtualbox-bin/README
@@ -127,3 +137,8 @@ f:08a160d6b098a0a495c2058cf016e3ae:par2cmdline/Pkgfile
 f:4f33fbbda5ed3f43deea4de8511a855d:vanilla-dmz/.signature
 f:76d29a2ce2fba0f80ec2c3ddcc5859b6:vanilla-dmz/Pkgfile
 f:15ae40fd4d3b2d5f7ec8264c249bdb27:vanilla-dmz/.footprint
+f:918467bf658fc80f3aa71e0725eec1a6:libselinux/.signature
+f:90db453508a100bf571a33f0da40dbff:libselinux/README
+f:153b80ed72cd0711246d23e5d4a3387b:libselinux/Pkgfile
+f:5bdeec35ebb7f37a6ab634433a829f2d:libselinux/utils.patch
+f:27a670b9336701046d34ded9ff66f0e5:libselinux/.footprint

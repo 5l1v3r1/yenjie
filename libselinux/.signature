@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uDgmy9sA/vqmkfh2nGOOt81abt8SPrT/vDZvJpnxc2Cgs5hpm4FDAS6sCBz958/ltgL3Tx/ke4+SvE9/hzpagwo=
+SHA256 (Pkgfile) = e54e7fd7354eb7ada79efbd041bcce9249b27ffcfd1c4986bcfbf7261431fa95
+SHA256 (.footprint) = 473e8700a0416acf5a8b8a32a8eb486fa4466ca6360ec14be3240a02cc5d6095
+SHA256 (libselinux-2.9.tar.gz) = 1bccc8873e449587d9a2b2cf253de9b89a8291b9fbc7c59393ca9e5f5f4d2693
+SHA256 (utils.patch) = 337a294fff94099cb9986084b79e77c34da92a017330dc348a83d1fb861d72ce
