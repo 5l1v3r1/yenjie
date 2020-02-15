@@ -1,0 +1,19 @@
+# Description: Whowatch - Monitor Linux Users and Processes in Real Time
+# URL:         http://whowatch.sourceforge.net/
+# Packager:    Lin SiFuh
+# Maintainer:  
+# Depends on:  
+
+name=whowatch
+version=1.8.6
+release=1
+source=(http://download.sourceforge.net/$name/$name-$version.tar.gz)
+
+build () {
+
+	cd $name-$version
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

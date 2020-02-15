@@ -533,7 +533,6 @@ drwxr-xr-x	root/root	usr/include/gnuradio/messages/
 -rw-r--r--	root/root	usr/include/gnuradio/py_feval.h
 -rw-r--r--	root/root	usr/include/gnuradio/pycallback_object.h
 drwxr-xr-x	root/root	usr/include/gnuradio/qtgui/
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/CMakeLists.txt
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/ConstellationDisplayPlot.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/DisplayPlot.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/FrequencyDisplayPlot.h
@@ -2038,12 +2037,6 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/digital/packet/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/digital/run_length.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/digital/snr_estimators.py
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/dtv/
--rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/README.atsc
--rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/README.catv
--rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/README.dvbs
--rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/README.dvbs2
--rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/README.dvbt
--rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/README.dvbt2
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/dtv/atsc_ctrlport_monitor.py
 -rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/catv_tx_256qam.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/dtv/catv_tx_64qam.grc
@@ -2140,7 +2133,6 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/metadata/
 -rw-r--r--	root/root	usr/share/gnuradio/examples/metadata/file_metadata_vector_sink.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/metadata/file_metadata_vector_source.grc
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/mp-sched/
--rw-r--r--	root/root	usr/share/gnuradio/examples/mp-sched/README
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/mp-sched/affinity_set.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/mp-sched/plot_flops.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/mp-sched/run_synthetic.py
@@ -2194,7 +2186,6 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/g723_40_audio_loopback.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/ulaw_audio_loopback.py
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/volk_benchmark/
--rw-r--r--	root/root	usr/share/gnuradio/examples/volk_benchmark/README
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/volk_benchmark/volk_math.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/volk_benchmark/volk_plot.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/volk_benchmark/volk_test_funcs.py

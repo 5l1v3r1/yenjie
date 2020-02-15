@@ -1,0 +1,55 @@
+# Description: Linux driver for USRP  
+# URL:         https://www.ettus.com/ 
+# Packager:    Lin SiFuh
+# Maintainer:  
+# Depends on:  git cmake boost python3-mako
+
+name=uhd
+version=3.15.0.0
+sversion=aea0e2de34803d5ea8f25d7cf2fb08f4ab9d43f0
+release=2
+source=()
+
+#source=(https://codeload.github.com/EttusResearch/uhd/zip/master)
+
+build () {
+
+        cd $PKGMK_SOURCE_DIR
+        if [ ! -d "$name" ]; then
+                git clone -b v$version git://github.com/EttusResearch/$name.git $name
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        else
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        fi
+
+        cp -r $PKGMK_SOURCE_DIR/$name $SRC
+        cd $SRC/$name/host
+
+	mkdir build
+	cd build
+	cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ../
+	make
+	make test
+	make DESTDIR=$PKG install
+
+
+        make
+        make DESTDIR=$PKG install
+
+        find $PKG \(\
+        -iname '*readme*' -o \
+        -iname '*changelog*' -o \
+        -name '*TODO*' -o \
+        -iname '*news*' -o \
+        -iname '*license*' -o \
+        -iname '*credits*' \
+        \) -exec rm -rf '{}' \; || true
+        rm -rf $PKG/usr/share/doc
+
+}

@@ -2,11 +2,11 @@
 # URL:         	http://www.gnuradio.org
 # Packager:	Lin SiFuh
 # Maintainer:  
-# Depends on: 	git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy doxygen cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 wxpython python3-lxml portaudio jack 
+# Depends on: 	git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy doxygen cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 wxpython python3-lxml portaudio jack pyyaml python3-gobject python3-cairo python3-click pygtk gsm libsdl gtk3 uhd
 
 name=gnuradio
 version=3.9.0.0
-sversion=654bec7628ca6b47c69180e0f7042c35c1831552
+sversion=a56c3a7f4908133dc6ceb93ffd3b2f9e1dda8e0e
 release=2
 source=(FindQwt_cmake.patch)
 
@@ -18,7 +18,7 @@ build () {
 
 	cd $PKGMK_SOURCE_DIR
 	if [ ! -d "$name" ]; then
-		git clone --recursive -b maint-${version//.0.0/} https://github.com/$name/$name.git $name
+		git clone --recursive https://github.com/$name/$name.git $name
 		cd $name
 		if [ `git rev-parse HEAD` != $sversion ]; then
 			git checkout $sversion
@@ -42,6 +42,8 @@ build () {
 		-DENABLE_INTERNAL_VOLK=ON		\
 		-DENABLE_GR_QTGUI=ON			\
 		-DENABLE_GR_TRELLIS=OFF			\
+		-DENABLE_GR_DOXYGEN=OFF			\
+		-DENABLE_GRC=ON				\
 		../
 	make
 
