@@ -24,6 +24,7 @@ d:xconsole
 d:volk
 d:virtualbox-extpack
 d:libsepol
+d:pidgin-skypeweb
 d:libraw
 d:virtualbox-bin
 d:par2cmdline
@@ -121,6 +122,9 @@ f:b39ac7690facf4b44e2849602b4ef393:libsepol/.signature
 f:90db453508a100bf571a33f0da40dbff:libsepol/README
 f:68e53266ee6dd0c792c8ad4193e0ae0a:libsepol/Pkgfile
 f:5b2f84efa907527813b83608633f2b76:libsepol/.footprint
+f:54aaa5f3c9e5ed8990ff0c3d581bb699:pidgin-skypeweb/.footprint
+f:df1ee515ca5f846b2b6588e645e332ce:pidgin-skypeweb/.signature
+f:aeaf057d9194a548aea036abf60eb6dc:pidgin-skypeweb/Pkgfile
 f:fe7271674494fe1a5e3d4834ecd325c1:libraw/.footprint
 f:c4b306059a11eda4ba5269895acf636b:libraw/Pkgfile
 f:a88bd2e1e84036065b1ab5e73c1bc03c:libraw/.signature
