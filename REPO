@@ -29,6 +29,7 @@ f:5248203351951371ab57b334dd34afe3:gnuradio/.footprint
 f:bbb8e3fc93d884f572136e12710d20f1:gnuradio/.signature
 f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
 f:8107e91cda60e49eec58c95a0b759cda:gnuradio/Pkgfile
+f:4691b1b0a7d2c65b4d551bd551888e62:gnuradio/README
 f:af70bf411e725167d9ba7fd0dd63943f:hashcat-utils/.footprint
 f:2d7f1338bedc44f1caa12c4ad1d8b113:hashcat-utils/.signature
 f:52272df80aa801e15c389afb450ae340:hashcat-utils/Pkgfile
