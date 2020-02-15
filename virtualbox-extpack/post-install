@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Install into VirtualBox
+
+VBoxManage extpack install /opt/VirtualBox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack-6.1.2-135662.vbox-extpack

@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uGWHuyPyX6mScaPQNYQS4bZDaYalS32eGpobrHNEHmqa/gbTiokCs12jDyk+a3JQFV9fVzGT3xVL6tGyKMzRkA0=
+SHA256 (Pkgfile) = 65a7cc1433d52b9d5e40a364e0653324124127a358b47d8fb88f5fde7e868da9
+SHA256 (.footprint) = a5a3c22568a3c176939420b099260d36654b4a16613e4a76ff97daf1091c59f8
+SHA256 (VirtualBox-6.1.2-135662-Linux_amd64.run) = 23d5e96a7e006d06532993b8ecafeadbeca885f947e522cf1e8e26398f354a08
+SHA256 (vbox_build_module) = 200713a6d4bf92d9047bcf62dc8ea304ba6cc4877c7c8b17d397cf4b0a9b88fd
+SHA256 (60-vboxdrv.rules) = 4e933d15f465229d33813e88d3e5fc432a56a3ac6176763bbac247eef291ff84

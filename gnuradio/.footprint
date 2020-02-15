@@ -717,6 +717,8 @@ drwxr-xr-x	root/root	usr/include/gnuradio/vocoder/
 -rw-r--r--	root/root	usr/include/gnuradio/vocoder/g723_24_encode_sb.h
 -rw-r--r--	root/root	usr/include/gnuradio/vocoder/g723_40_decode_bs.h
 -rw-r--r--	root/root	usr/include/gnuradio/vocoder/g723_40_encode_sb.h
+-rw-r--r--	root/root	usr/include/gnuradio/vocoder/gsm_fr_decode_ps.h
+-rw-r--r--	root/root	usr/include/gnuradio/vocoder/gsm_fr_encode_sp.h
 -rw-r--r--	root/root	usr/include/gnuradio/vocoder/ulaw_decode_bs.h
 -rw-r--r--	root/root	usr/include/gnuradio/vocoder/ulaw_encode_sb.h
 drwxr-xr-x	root/root	usr/include/gnuradio/wavelet/
@@ -1926,9 +1928,6 @@ drwxr-xr-x	root/root	usr/lib/python3.7/site-packages/volk_modtool/
 -rw-r--r--	root/root	usr/lib/python3.7/site-packages/volk_modtool/volk_modtool_generate.py
 -rw-r--r--	root/root	usr/lib/python3.7/site-packages/volk_modtool/volk_modtool_generate.pyc
 -rw-r--r--	root/root	usr/lib/python3.7/site-packages/volk_modtool/volk_modtool_generate.pyo
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/gnuradio/
--rwxr-xr-x	root/root	usr/libexec/gnuradio/grc_setup_freedesktop
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnuradio-grc.desktop
@@ -2184,6 +2183,8 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/g721_audio_loopback.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/g723_24_audio_loopback.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/g723_40_audio_loopback.py
+-rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/gsm_audio_loopback.py
+-rw-r--r--	root/root	usr/share/gnuradio/examples/vocoder/loopback-gsmfr.grc
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/ulaw_audio_loopback.py
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/volk_benchmark/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/volk_benchmark/volk_math.py
@@ -2659,6 +2660,8 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_g723_24_encode_sb.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_g723_40_decode_bs.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_g723_40_encode_sb.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_gsm_fr_decode_ps.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_gsm_fr_encode_sp.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_ulaw_decode_bs.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_ulaw_encode_sb.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/xmlrpc_client.block.yml

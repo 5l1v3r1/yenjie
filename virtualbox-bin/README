@@ -1,0 +1,9 @@
+NOTE:
+
+	If you wish for the Virtual Box drivers to be loaded
+	on boot then edit /etc/rc.local config file and add
+	something similar to this.
+
+	if [ -f /sbin/rcvboxdrv ]; then
+		rcvboxdrv start
+	fi

@@ -1,0 +1,21 @@
+# Description: The Vector Optimized Library of Kernels
+# URL:         www.libvolk.org
+# Packager:    Lin SiFuh
+# Maintainer:  
+# Depends on:  neon git python3 python3-mako orc doxygen python3-six
+
+name=volk
+version=2.1.0
+release=1
+source=(https://github.com/gnuradio/$name/archive/v$version.tar.gz)
+
+build () {
+
+	cd $name-$version
+	mkdir build
+	cd build
+ 	cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ../
+	make 
+	make test
+	make DESTDIR=$PKG install
+}
