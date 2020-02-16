@@ -29,6 +29,7 @@ d:libraw
 d:virtualbox-bin
 d:par2cmdline
 d:vanilla-dmz
+d:ncrack
 d:libselinux
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
@@ -141,6 +142,9 @@ f:08a160d6b098a0a495c2058cf016e3ae:par2cmdline/Pkgfile
 f:4f33fbbda5ed3f43deea4de8511a855d:vanilla-dmz/.signature
 f:76d29a2ce2fba0f80ec2c3ddcc5859b6:vanilla-dmz/Pkgfile
 f:15ae40fd4d3b2d5f7ec8264c249bdb27:vanilla-dmz/.footprint
+f:2f6fbf016f322b0c1651421e1f3ce84e:ncrack/Pkgfile
+f:8113d2f3445d5af4b032a904bd3152c0:ncrack/.footprint
+f:2b9cecf49c0f86fc7b7aa22d81dbe2fd:ncrack/.signature
 f:918467bf658fc80f3aa71e0725eec1a6:libselinux/.signature
 f:90db453508a100bf571a33f0da40dbff:libselinux/README
 f:153b80ed72cd0711246d23e5d4a3387b:libselinux/Pkgfile
