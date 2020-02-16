@@ -30,6 +30,7 @@ d:virtualbox-bin
 d:par2cmdline
 d:vanilla-dmz
 d:ncrack
+d:libdwarf
 d:libselinux
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
@@ -123,8 +124,8 @@ f:b39ac7690facf4b44e2849602b4ef393:libsepol/.signature
 f:90db453508a100bf571a33f0da40dbff:libsepol/README
 f:68e53266ee6dd0c792c8ad4193e0ae0a:libsepol/Pkgfile
 f:5b2f84efa907527813b83608633f2b76:libsepol/.footprint
-f:54aaa5f3c9e5ed8990ff0c3d581bb699:pidgin-skypeweb/.footprint
 f:df1ee515ca5f846b2b6588e645e332ce:pidgin-skypeweb/.signature
+f:54aaa5f3c9e5ed8990ff0c3d581bb699:pidgin-skypeweb/.footprint
 f:aeaf057d9194a548aea036abf60eb6dc:pidgin-skypeweb/Pkgfile
 f:fe7271674494fe1a5e3d4834ecd325c1:libraw/.footprint
 f:c4b306059a11eda4ba5269895acf636b:libraw/Pkgfile
@@ -145,6 +146,9 @@ f:15ae40fd4d3b2d5f7ec8264c249bdb27:vanilla-dmz/.footprint
 f:2f6fbf016f322b0c1651421e1f3ce84e:ncrack/Pkgfile
 f:8113d2f3445d5af4b032a904bd3152c0:ncrack/.footprint
 f:2b9cecf49c0f86fc7b7aa22d81dbe2fd:ncrack/.signature
+f:fb7ae396cb169c546844e5eec6eba53b:libdwarf/Pkgfile
+f:9f64ccd875024c9579ecc50196e1e8b4:libdwarf/.signature
+f:a53294b5390df3bea7e40dcee9bfca7e:libdwarf/.footprint
 f:918467bf658fc80f3aa71e0725eec1a6:libselinux/.signature
 f:90db453508a100bf571a33f0da40dbff:libselinux/README
 f:153b80ed72cd0711246d23e5d4a3387b:libselinux/Pkgfile
