@@ -156,6 +156,7 @@ f:153b80ed72cd0711246d23e5d4a3387b:libselinux/Pkgfile
 f:5bdeec35ebb7f37a6ab634433a829f2d:libselinux/utils.patch
 f:27a670b9336701046d34ded9ff66f0e5:libselinux/.footprint
 f:c3b1c2927fdea4be73c894220cecd922:kismet-2016/pre-install
-f:f06ceac4f8017140e563414b65f4f431:kismet-2016/Pkgfile
-f:d65370715841d577d4a92fae4b131ec7:kismet-2016/.footprint
-f:4678f766f8b47067fb71b4e0db6cc90c:kismet-2016/.signature
+f:64e07e059f8f424281a4aea0546c490f:kismet-2016/Pkgfile
+f:22ce068d08f6bd7b7cb7de4c49339b0a:kismet-2016/.footprint
+f:27b26d842c2e84f392d3777bc065fc83:kismet-2016/.signature
+f:24456a2518e0befeea873b3ddccbeafb:kismet-2016/aircrack_crypto_cc.patch
