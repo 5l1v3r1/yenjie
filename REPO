@@ -32,6 +32,7 @@ d:vanilla-dmz
 d:ncrack
 d:libdwarf
 d:libselinux
+d:kismet-2016
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -154,3 +155,7 @@ f:90db453508a100bf571a33f0da40dbff:libselinux/README
 f:153b80ed72cd0711246d23e5d4a3387b:libselinux/Pkgfile
 f:5bdeec35ebb7f37a6ab634433a829f2d:libselinux/utils.patch
 f:27a670b9336701046d34ded9ff66f0e5:libselinux/.footprint
+f:c3b1c2927fdea4be73c894220cecd922:kismet-2016/pre-install
+f:f06ceac4f8017140e563414b65f4f431:kismet-2016/Pkgfile
+f:d65370715841d577d4a92fae4b131ec7:kismet-2016/.footprint
+f:4678f766f8b47067fb71b4e0db6cc90c:kismet-2016/.signature

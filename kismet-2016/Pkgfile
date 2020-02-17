@@ -1,0 +1,28 @@
+# Description: 	A wireless network sniffer (Ncurses Based)
+# URL:		https://www.kismetwireless.net/
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on: 	libpcap libnl 
+# Optional:	sox
+
+name=kismet-2016
+version=2016-07-R1
+release=1
+source=(https://www.kismetwireless.net/code/${name//-2016/}-$version.tar.xz)
+
+build() {
+
+	cd ${name//-2016/}-$version
+	
+	./configure --prefix=/usr --with-suidgroup=kismet
+	
+	make all-with-plugins
+	make DESTDIR=$PKG suidinstall
+
+#	chgrp kismet $PKG/usr/bin/kismet*
+#	chmod 4550 $PKG/usr/bin/kismet*
+
+	mv $PKG/usr/etc/kismet.conf $PKG/usr/etc/kismet.conf.orig
+	mv $PKG/usr/etc/kismet_drone.conf $PKG/usr/etc/kismet_drone.conf.orig
+	
+}

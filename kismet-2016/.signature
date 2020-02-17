@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uCZaGeEngljiLXwVVSKXPxhbf/QZlwLaDzAeRMbzPxaxQeiUpyfYdS10VNOglRau5uu2uqqDAbuVdwkELvYQpgE=
+SHA256 (Pkgfile) = d789e314261369a373ebfe562b2e00ec20b768a77916258a78d0fbe48089d3c4
+SHA256 (.footprint) = 48a82f21e660d2c0049531221a6c19569015129ebfa71e9a4bf04501794216ac
+SHA256 (kismet-2016-07-R1.tar.xz) = bdb21f153311f1ff3b16621bf0d6740f66369bf0982b0a289c9a12af8847e237
