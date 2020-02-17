@@ -1,0 +1,45 @@
+# Description: Osmocom Gnu Radio Blocks
+# URL:         http://osmocom.org/projects/osmosdr
+# Packager:    Lin SiFuh
+# Maintainer:  
+# Depends on:  gnuradio
+
+name=gr-osmosdr
+version=0.2.0
+sversion=af2fda22b3b3745520ef38e9aaa757484871ee0c
+release=2
+source=()
+
+build () {
+
+        cd $PKGMK_SOURCE_DIR
+        if [ ! -d "$name" ]; then
+                git clone -b v$version git://git.osmocom.org/$name
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        else
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        fi
+
+        cp -r $PKGMK_SOURCE_DIR/$name $SRC
+        cd $SRC/$name
+
+	sed -e '/find_package(Gnuradio/ s|3.8|3.9|g' \
+                -i CMakeLists.txt
+
+
+	mkdir build
+	cd build
+	cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/doc
+
+}

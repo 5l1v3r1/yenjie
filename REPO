@@ -34,6 +34,7 @@ d:libdwarf
 d:libselinux
 d:kismet-2016
 d:ettercap
+d:gr-osmosdr
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -165,3 +166,6 @@ f:24456a2518e0befeea873b3ddccbeafb:kismet-2016/aircrack_crypto_cc.patch
 f:a86648bd031216f6e34ac29e81161600:ettercap/Pkgfile
 f:1139f75accc58121274a1764c8217ade:ettercap/.footprint
 f:4114c11acfd588b297475370a0d8218e:ettercap/.signature
+f:a5a7c1c461d305f771de486a48960603:gr-osmosdr/Pkgfile
+f:256a7f3da4547bba7203293eab8cc7bb:gr-osmosdr/.signature
+f:d03166fc76630b014bae5a9623f461a1:gr-osmosdr/.footprint
