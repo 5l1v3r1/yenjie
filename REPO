@@ -33,6 +33,7 @@ d:ncrack
 d:libdwarf
 d:libselinux
 d:kismet-2016
+d:ettercap
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -157,6 +158,10 @@ f:5bdeec35ebb7f37a6ab634433a829f2d:libselinux/utils.patch
 f:27a670b9336701046d34ded9ff66f0e5:libselinux/.footprint
 f:c3b1c2927fdea4be73c894220cecd922:kismet-2016/pre-install
 f:64e07e059f8f424281a4aea0546c490f:kismet-2016/Pkgfile
+f:f22216d7f8e3f6780d6760ddee256eef:kismet-2016/README
 f:22ce068d08f6bd7b7cb7de4c49339b0a:kismet-2016/.footprint
 f:27b26d842c2e84f392d3777bc065fc83:kismet-2016/.signature
 f:24456a2518e0befeea873b3ddccbeafb:kismet-2016/aircrack_crypto_cc.patch
+f:a86648bd031216f6e34ac29e81161600:ettercap/Pkgfile
+f:1139f75accc58121274a1764c8217ade:ettercap/.footprint
+f:4114c11acfd588b297475370a0d8218e:ettercap/.signature

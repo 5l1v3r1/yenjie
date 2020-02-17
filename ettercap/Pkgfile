@@ -1,0 +1,28 @@
+# Description:	Ettercap is a comprehensive suite for man in the middle attacks
+# URL:		https://www.ettercap-project.org/
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on:	libnet libgeoip geoip-database cmake ghostscript libpcap
+
+name=ettercap
+version=0.8.3
+release=1
+source=(https://github.com/Ettercap/$name/archive/v$version.tar.gz)
+
+build() {
+
+	cd $name-$version
+
+	mkdir build
+	cd build
+	
+	cmake -DENABLE_IPV6=ON 			\
+	      -DCMAKE_INSTALL_PREFIX:PATH=/usr 	\
+	      -DENABLE_GTK=OFF ..
+
+	make DESTDIR=$PKG install	
+	
+	rm $PKG/usr/share/ettercap/AUTHORS	\
+	   $PKG/usr/share/ettercap/LICENSE
+
+}
