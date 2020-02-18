@@ -38,14 +38,15 @@ d:gr-osmosdr
 d:mpir
 d:gqrx
 d:fping
+d:android-tools
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
 f:27af459dabd545e9fd0f3dacc81295f0:aircrack-ng/Pkgfile
 f:3fc23a0913b2e3cd4d71c45093764a33:gnuradio/.footprint
-f:1c044c423026fd1f6cc08e1663843dd7:gnuradio/.signature
+f:2a15d55ea4a6af202960be46c6e69796:gnuradio/.signature
 f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
-f:76ce0415ffed60ef0dc79ff7f96e6585:gnuradio/Pkgfile
+f:18469726f5920ff0e0b7d46ff636e4b0:gnuradio/Pkgfile
 f:4691b1b0a7d2c65b4d551bd551888e62:gnuradio/README
 f:af70bf411e725167d9ba7fd0dd63943f:hashcat-utils/.footprint
 f:2d7f1338bedc44f1caa12c4ad1d8b113:hashcat-utils/.signature
@@ -181,3 +182,6 @@ f:a6716de45265e05ac365d99cefd8a1be:gqrx/.signature
 f:844b11eb1553bf1465ada590f82de447:fping/Pkgfile
 f:2a540487658c78f914aae1b16588269d:fping/.footprint
 f:5447c4f23263346d6cc4d20cd8b18172:fping/.signature
+f:612f73f42c4e557a9db19cf392c2e6c8:android-tools/Pkgfile
+f:257d3c9559aa5b9dc3f84545b7c0daaf:android-tools/.footprint
+f:e5f6cca6d7e591caa04ea53c5038f253:android-tools/.signature
