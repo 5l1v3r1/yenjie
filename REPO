@@ -39,6 +39,7 @@ d:mpir
 d:gqrx
 d:fping
 d:android-tools
+d:arp-scan
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -185,3 +186,6 @@ f:5447c4f23263346d6cc4d20cd8b18172:fping/.signature
 f:612f73f42c4e557a9db19cf392c2e6c8:android-tools/Pkgfile
 f:257d3c9559aa5b9dc3f84545b7c0daaf:android-tools/.footprint
 f:e5f6cca6d7e591caa04ea53c5038f253:android-tools/.signature
+f:df068b471f2e8a2720782af8beb39fa6:arp-scan/Pkgfile
+f:c5fd8589f82349eea2c0aaf5ef3280e0:arp-scan/.footprint
+f:91af305441248e225c24d8b53b87e832:arp-scan/.signature

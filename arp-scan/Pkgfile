@@ -1,0 +1,20 @@
+# Description:	The ARP Scanner	
+# URL:		htts://github.com/royhills/arp-scan
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on:	libpcap
+
+name=arp-scan
+version=1.9.7
+release=1
+source=(https://github.com/royhills/$name/releases/download/${version::-2}/$name-${version::-2}.tar.gz)
+
+build() {
+
+	cd $name-${version::-2}
+	autoreconf --install
+	./configure --prefix=/usr
+	
+	make
+	make DESTDIR=$PKG install
+}
