@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/bin/
+-rwxrwxr-x	root/root	opt/bin/adb
+-rwxrwxr-x	root/root	opt/bin/dmtracedump
+-rwxrwxr-x	root/root	opt/bin/etc1tool
+-rwxrwxr-x	root/root	opt/bin/fastboot
+-rwxrwxr-x	root/root	opt/bin/hprof-conv
+-rwxrwxr-x	root/root	opt/bin/sqlite3

@@ -1,0 +1,22 @@
+# Description:  Android SDK Platform-Tools
+# URL:          http://developer.android.com/sdk/index.html
+# Packager:     Lin SiFuh
+# Maintainer:   
+#
+# Depends on:
+
+name=android-tools
+version=r29.0.5
+release=1
+source=(http://dl-ssl.google.com/android/repository/platform-tools_$version-linux.zip)
+
+build() {
+
+	mkdir -p $PKG/opt/bin
+	
+	cp -a $SRC/platform-tools/{adb,dmtracedump,etc1tool,fastboot,hprof-conv,sqlite3} \
+	      $PKG/opt/bin
+
+	chmod +Xr -R $PKG/opt/bin
+
+}
