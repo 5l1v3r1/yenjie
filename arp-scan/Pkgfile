@@ -2,7 +2,7 @@
 # URL:		htts://github.com/royhills/arp-scan
 # Packager:	Lin SiFuh
 # Maintainer:
-# Depends on:	libpcap
+# Depends on:	libpcap p5-lwp-protocol-http p5-http-message 
 
 name=arp-scan
 version=1.9.7
@@ -17,4 +17,7 @@ build() {
 	
 	make
 	make DESTDIR=$PKG install
+
+	chmod 4755 $PKG/usr/bin/arp-scan
+
 }

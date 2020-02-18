@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/arp-fingerprint
--rwxr-xr-x	root/root	usr/bin/arp-scan
+-rwsr-xr-x	root/root	usr/bin/arp-scan
 -rwxr-xr-x	root/root	usr/bin/get-iab
 -rwxr-xr-x	root/root	usr/bin/get-oui
 drwxr-xr-x	root/root	usr/share/
