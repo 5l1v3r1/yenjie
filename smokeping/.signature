@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uJlSKQQzumnfHOL+3eSekVO50gXHwfQQfzOrbEeOHMn3A85lNHnJ4jt83lfFt6hdfD3wwAKWesWmUgRrzVexZwk=
+SHA256 (Pkgfile) = ffbfc6ae44ff5e818be1f814b5b81ed7b6084bb2d615f1241bfc427236819a74
+SHA256 (.footprint) = b5e8b1b081f46ad59e556d2b85585320663375558b1fe6335df96b4c3ed9a968
+SHA256 (smokeping-2.7.3.tar.gz) = 430fd58030a494068a897f772c052fc0979ebdd38d1859a03820e098628d36b4

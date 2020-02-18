@@ -40,6 +40,7 @@ d:gqrx
 d:fping
 d:android-tools
 d:arp-scan
+d:smokeping
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -189,3 +190,6 @@ f:e5f6cca6d7e591caa04ea53c5038f253:android-tools/.signature
 f:2620259bc5050f00b092fe044c94615d:arp-scan/Pkgfile
 f:884b141426e68ec7f647e74ca6cf2895:arp-scan/.footprint
 f:7942d8290c2359542ebdcaf8d33afe97:arp-scan/.signature
+f:835b194d808ec279c8fed0b3071b66d2:smokeping/Pkgfile
+f:b84ce36dfd04c31ea993d947df2c4994:smokeping/.footprint
+f:e0fcf080233af4e8a3c79105ecc24fb9:smokeping/.signature
