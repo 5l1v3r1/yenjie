@@ -1,0 +1,39 @@
+# Description:	An open source software defined radio receiver (SDR)
+# URL:		http://gqrx.dk/
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on:	gnuradio gr-osmosdr pulseaudio
+
+name=gqrx
+version=2.11.5
+sversion=490ee3be4f1c5e0319b7610912104e2d0a47fd4e
+release=1
+source=()
+
+build() {
+
+        cd $PKGMK_SOURCE_DIR
+        if [ ! -d "$name" ]; then
+                git clone -b v$version https://github.com/csete/$name $name 
+		cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        else
+                cd $name
+                if [ `git rev-parse HEAD` != $sversion ]; then
+                        git checkout $sversion
+                fi
+        fi
+
+        cp -r $PKGMK_SOURCE_DIR/$name $SRC
+        cd $SRC/$name	
+
+	mkdir build
+	cd build
+	cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+
+	make
+	make DESTDIR=$PKG install
+
+}
