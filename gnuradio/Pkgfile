@@ -3,6 +3,7 @@
 # Packager:	Lin SiFuh
 # Maintainer:  
 # Depends on: 	git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy doxygen cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 wxpython python3-lxml portaudio jack pyyaml python3-gobject python3-cairo python3-click pygtk gsm libsdl gtk3 uhd
+# Optional:	volk
 
 name=gnuradio
 version=3.9.0.0
