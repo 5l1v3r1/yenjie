@@ -42,6 +42,7 @@ d:android-tools
 d:arp-scan
 d:smokeping
 d:hping3
+d:net-tools
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -201,3 +202,8 @@ f:8e067f8b3f3e007d0d4c121f30b0fb32:hping3/bytesex_h.patch
 f:5d6e6a8c59549f7c1841b5fb92b89287:hping3/libpcap_stuff_c.patch
 f:83922f9f1b60fa015459c03b8ea7ca4c:hping3/Makefile.patch
 f:5de961907a4a371d644982e65aa29506:hping3/.footprint
+f:ba553bee2e17f747bc5faca1053b3aaf:net-tools/net-tools.patch
+f:c67924a072dd7fb5c5fb74e699ef2671:net-tools/config.h
+f:dd7db7292582fe764354d35ca41cf3df:net-tools/Pkgfile
+f:acab9852a1d5de98c5b104eb002b2790:net-tools/.footprint
+f:150216dc085bf6fc896c0b314da8d91d:net-tools/.signature
