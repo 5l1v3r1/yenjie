@@ -21,4 +21,8 @@ build() {
 	echo "/opt/lib/${name//-bin/}" > $PKG/opt/etc/revdep.d/${name}
 
 	install -m755 -d $PKG/opt/share/pixmaps
+
+        mkdir -p $PKG/etc/revdep.d
+        echo "/opt/lib/seamonkey/" > $PKG/etc/revdep.d/seamonkey-bin
+
 }
