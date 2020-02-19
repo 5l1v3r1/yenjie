@@ -27,9 +27,9 @@ build() {
 	rm -rf $PKG/usr/share/{locale,bakefile}
 	rm $PKG/usr/bin/{wxrc,wx-config}
  
-	mv $PKG/usr/share/aclocal/wxwin.m4 $PKG/usr/share/aclocal/wxwin-${version::-2}.m4
+	mv $PKG/usr/share/aclocal/wxwin.m4 $PKG/usr/share/aclocal/wxwin-${version%.*}.m4
 
-	ln -s /usr/lib/wx/config/gtk2-unicode-${version::-2} $PKG/usr/bin/wx-config-${version::-2}
-	ln -s /usr/lib/wx/config/gtk2-unicode-${version::-2} $PKG/usr/bin/wx-config
+	ln -s /usr/lib/wx/config/gtk2-unicode-${version%.*} $PKG/usr/bin/wx-config-${version%.*}
+	ln -s /usr/lib/wx/config/gtk2-unicode-${version%.*} $PKG/usr/bin/wx-config
 
 }
