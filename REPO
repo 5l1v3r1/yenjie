@@ -104,7 +104,7 @@ f:89345949d8482367fb9b2d7e94c7d9a3:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
 f:3d2e812cbf57e7e9a2d23ccca6e125c0:telegram-bin/.signature
 f:ec0a67bee91ea9dbbcd480d55b016599:seamonkey-bin/.signature
-f:ee4e6585833c7057bd935e33b35d4fde:seamonkey-bin/Pkgfile
+f:3dad7a67af4446ff326af3a214d8953d:seamonkey-bin/Pkgfile
 f:0b177ea8d77ba9175d68feabea7a29cf:seamonkey-bin/.footprint
 f:9011ce845f9366278b081ce3d306be17:uhd/Pkgfile
 f:bd18ae7a4b4a7277c39aecc2cccd3bd7:uhd/.footprint
@@ -192,9 +192,9 @@ f:a6716de45265e05ac365d99cefd8a1be:gqrx/.signature
 f:844b11eb1553bf1465ada590f82de447:fping/Pkgfile
 f:2a540487658c78f914aae1b16588269d:fping/.footprint
 f:5447c4f23263346d6cc4d20cd8b18172:fping/.signature
-f:612f73f42c4e557a9db19cf392c2e6c8:android-tools/Pkgfile
-f:257d3c9559aa5b9dc3f84545b7c0daaf:android-tools/.footprint
-f:e5f6cca6d7e591caa04ea53c5038f253:android-tools/.signature
+f:ddb1bc07decbaa0e736e45febeded546:android-tools/Pkgfile
+f:72a9ae5208b5ea56308c3f47a334a0db:android-tools/.footprint
+f:1d1ea8b7f6c9e89523862282c8fdaed5:android-tools/.signature
 f:2620259bc5050f00b092fe044c94615d:arp-scan/Pkgfile
 f:884b141426e68ec7f647e74ca6cf2895:arp-scan/.footprint
 f:7942d8290c2359542ebdcaf8d33afe97:arp-scan/.signature
