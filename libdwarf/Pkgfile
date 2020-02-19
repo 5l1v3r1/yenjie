@@ -1,7 +1,7 @@
 # Description: 	DWARF is a debugging file format used by many compilers and debuggers
 # URL:		https://www.prevanders.net/dwarfolder.html
-# Packager:	Lin SiFuh
-# Maintainer:
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on:
 
 name=libdwarf
