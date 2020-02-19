@@ -1,8 +1,8 @@
-# Description: Security Enhanced Linux (SELinux)
-# URL:         https://selinuxproject.org/
-# Packager:    Lin SiFuh
-# Maintainer:  
-# Depends on: libsepol
+# Description: 	Security Enhanced Linux (SELinux)
+# URL:         	https://selinuxproject.org/
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on: 	libsepol
 
 name=libselinux
 version=2.9
