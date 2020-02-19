@@ -1,6 +1,6 @@
 # Description:	Skype Messenger for Linux
 # URL:		http://pidgin.im/
-# Maintainer:	Lin SiFuh
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
 # Depends on:	cups gconf libidl orbit libsecret speexdsp pulseaudio-alsa alsa-plugins
 
 name=skypeforlinux-bin
