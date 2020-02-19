@@ -1,7 +1,7 @@
 # Description:  GTK+ text editor targeted towards programmers and web designers
 # URL:          http://bluefish.openoffice.nl/
-# Packager:	Lin SiFuh
-# Maintainer:   
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net, #crux at freenode dot net
 # Depends on:   gtk
 
 name=bluefish
@@ -16,7 +16,8 @@ build() {
 
 	cd $name-$version
 	
-	./configure --prefix=/usr --mandir=/usr/man 	\
+	./configure --prefix=/usr               \ 
+		    --mandir=/usr/share/man 		\
 		    --disable-nls --with-gtk2 		\
 		    --disable-update-databases 		\
         	    --disable-xml-catalog-update 	\
