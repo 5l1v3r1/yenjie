@@ -1,7 +1,7 @@
 # Description: 	A cross-platform GUI Library 
 # URL: 		http://www.wxwidgets.org/
-# Packager: 	Lin SiFuh 
-# Maintainer: 
+# Packager: 	 
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	 
 # Depends on: 	gtk glu gst-plugins-base gconf
 
 name=wxwidgets
