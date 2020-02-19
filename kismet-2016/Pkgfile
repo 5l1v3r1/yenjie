@@ -1,7 +1,7 @@
 # Description: 	A wireless network sniffer (Ncurses Based)
 # URL:		https://www.kismetwireless.net/
-# Packager:	Lin SiFuh
-# Maintainer:
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on: 	libpcap libnl libusb-compat bluez
 # Optional:	sox
 
