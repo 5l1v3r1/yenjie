@@ -118,7 +118,6 @@ f:6b5c07d7493cbcb0a646e9f014b65e29:vokoscreen/.signature
 f:2b4a52055f275a151babdec170465937:skypeforlinux-bin/.signature
 f:9e4b00d599d4b582a2fc7b61d09f4426:skypeforlinux-bin/Pkgfile
 f:6b2c57b1f26cd4df78a34b5e09079c32:skypeforlinux-bin/.footprint
-f:66bcc9295f0b15b33b31591fc69b7943:skypeforlinux-bin/skypeforlinux_8.57.76.109_amd64.deb
 f:19c766f2cd86cf2266c4c10cd8e485ba:whowatch/.signature
 f:026f3d0bfabb5305ea6b4ef6827eba67:whowatch/README
 f:8f8c37ffd663ed52ad67b772de0a6aba:whowatch/Pkgfile
@@ -138,7 +137,6 @@ f:8aee3638ac31aa17a58b2eaf315e8f76:virtualbox-extpack/.footprint
 f:d0a2840654b669e56808b3fbd1447ec8:virtualbox-extpack/README
 f:420545f612b63790b20d242ba85f3401:virtualbox-extpack/post-install
 f:b6c424803df05f46be186d82ee1dc07f:virtualbox-extpack/.signature
-f:6f5f99cc1ae65b857baee5cf28d73ebb:virtualbox-extpack/Oracle_VM_VirtualBox_Extension_Pack-6.1.2-135662.vbox-extpack
 f:d92b7212c0d68bd6dc85a617b87053ef:libsepol/.signature
 f:90db453508a100bf571a33f0da40dbff:libsepol/README
 f:1d90b2db666de6266d67173ffe7a94b7:libsepol/Pkgfile
@@ -153,7 +151,6 @@ f:6eb0e0557be887166c444d30fe6b74d9:virtualbox-bin/vbox_build_module
 f:9abeba63f6977200e53b6b10cb69e013:virtualbox-bin/Pkgfile
 f:3ce33328d23bf16bf9589fa36aa010cd:virtualbox-bin/60-vboxdrv.rules
 f:94ff0b617f68ae239a9c4485a9378c3d:virtualbox-bin/README
-f:2675488105bf1cc9cd68cec72c777c0f:virtualbox-bin/VirtualBox-6.1.2-135662-Linux_amd64.run
 f:98992c8d5afd80557dac447b8fb39a82:virtualbox-bin/post-install
 f:b154414f5b23d01a5ebc51360d4a3745:virtualbox-bin/.footprint
 f:54518c9ad9a02be4974ecaeae9c6c7c3:virtualbox-bin/.signature
