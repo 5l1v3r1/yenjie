@@ -1,8 +1,8 @@
-# Description: Realtek 88192au Wirless Driver (Aircrack Mod)
-# URL:         https://github.com/aircrack-ng/rtl8812au
-# Packager:    Lin SiFuh
-# Maintainer:  
-# Depends on:  git 
+# Description: 	Realtek 88192au Wirless Driver (Aircrack Mod)
+# URL:         	https://github.com/aircrack-ng/rtl8812au
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  	git 
 
 name=rtl8812au-linux-driver
 version=5.6.4.2
