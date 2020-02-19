@@ -2,7 +2,7 @@
 # URL: 		http://www.wxwidgets.org/
 # Packager: 	Lin SiFuh 
 # Maintainer: 
-# Depends on: gtk glu gst-plugins-base-compat gconf
+# Depends on: 	gtk glu gst-plugins-base-compat gconf
 
 name=wxwidgets
 version=3.1.3
@@ -30,4 +30,5 @@ build() {
 
 	ln -s /usr/lib/wx/config/gtk2-unicode-3.1 $PKG/usr/bin/wx-config-3.1
 	ln -s /usr/lib/wx/config/gtk2-unicode-3.1 $PKG/usr/bin/wx-config
+
 }
