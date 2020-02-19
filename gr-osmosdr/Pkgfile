@@ -1,8 +1,8 @@
-# Description: Osmocom Gnu Radio Blocks
-# URL:         http://osmocom.org/projects/osmosdr
-# Packager:    Lin SiFuh
-# Maintainer:  
-# Depends on:  gnuradio
+# Description:	Osmocom Gnu Radio Blocks
+# URL:		http://osmocom.org/projects/osmosdr
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:	gnuradio
 
 name=gr-osmosdr
 version=0.2.0
