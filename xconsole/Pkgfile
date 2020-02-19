@@ -1,8 +1,8 @@
-# Description: Xorg's xconsole
-# URL:         https://www.x.org/
-# Packager:    Lin SiFuh
-# Maintainer:  
-# Depends on:  xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11 xorg-xorgproto
+# Description: 	Xorg's xconsole
+# URL:         	https://www.x.org/
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  	xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11 xorg-xorgproto
 
 name=xconsole
 version=1.0.7
