@@ -1,7 +1,7 @@
 # Description:	Cross-Platform and Opensource Software-Defined Radio Application
 # URL:		https://cubicsdr.com/
-# Packager:	Lin SiFuh
-# Maintainer:
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on:	git cmake libglvnd rtaudio liquid-dsp soapy-sdr wxwidgets pulseaudio hamlib fftw
 
 name=cubicsdr
