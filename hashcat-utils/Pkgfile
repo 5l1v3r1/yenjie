@@ -1,7 +1,7 @@
 # Description: Hashcat password cracker for GPU
 # URL: https://hashcat.net/
-# Packager: Lin SiFuh
-# Maintainer: 
+# Packager: 
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	 
 # Depends on: hashcat
 
 name=hashcat-utils
