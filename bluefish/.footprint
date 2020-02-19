@@ -15,9 +15,9 @@ drwxr-xr-x	root/root	usr/lib/bluefish/
 -rwxr-xr-x	root/root	usr/lib/bluefish/snippets.so
 -rwxr-xr-x	root/root	usr/lib/bluefish/zencoding.la
 -rwxr-xr-x	root/root	usr/lib/bluefish/zencoding.so
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/bluefish.1.gz
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/bluefish.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/appdata/
 -rw-r--r--	root/root	usr/share/appdata/bluefish.appdata.xml
