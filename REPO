@@ -48,6 +48,7 @@ d:rtaudio
 d:soapy-sdr
 d:wxwidgets
 d:cubicsdr
+d:soapy-rtlsdr
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -229,3 +230,6 @@ f:24446776d4f2512a1b6551adb4181fba:wxwidgets/Pkgfile
 f:c4894177f3714b91db9bf2f1cabdcfde:cubicsdr/Pkgfile
 f:65a98ea106e5b50f62f81b893354cacc:cubicsdr/.footprint
 f:29110bbd63b6c3659847c94b2d8cdb5f:cubicsdr/.signature
+f:4035378468d07280b88e031a0f97a5bc:soapy-rtlsdr/Pkgfile
+f:59955c221b94275facf2ede263d04412:soapy-rtlsdr/.footprint
+f:6f6d70f1b83c6e2103a681b8f4e43661:soapy-rtlsdr/.signature

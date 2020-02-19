@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uJZL0VqcTASl2ZVSTj1Akgr5pXg7145qqJMF4kyOUT1qyhYSafvvjoUrB7bRG60FBinw9YLHq003P/xjmP4AhwE=
+SHA256 (Pkgfile) = a916936cd693811feced2681000d827c25a63cb9d281a082e26e8661a6d1c99a
+SHA256 (.footprint) = d50eada85c4c6794cb32fccbf9a4b492e9808a177f055efb3eaffcfb013c4ac5
+SHA256 (soapy-rtlsdr-0.3.0.tar.gz) = 9c31c67c2646628b448bbef1307f3880b7e78be8caf7a02cd3cfa4d08dc4075b
