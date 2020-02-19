@@ -1,7 +1,7 @@
 # Description:	Mplayer frontend
 # URL:		http://smplayer.sf.net/
-# Packager:	Lin SiFuh
-# Maintainer:	
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
 # Depends on:	mplayer qt5
 
 name=smplayer
