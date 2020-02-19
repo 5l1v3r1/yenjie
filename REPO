@@ -43,6 +43,9 @@ d:arp-scan
 d:smokeping
 d:hping3
 d:net-tools
+d:liquid-dsp
+d:rtaudio
+d:soapy-sdr
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -207,3 +210,12 @@ f:c67924a072dd7fb5c5fb74e699ef2671:net-tools/config.h
 f:dd7db7292582fe764354d35ca41cf3df:net-tools/Pkgfile
 f:acab9852a1d5de98c5b104eb002b2790:net-tools/.footprint
 f:150216dc085bf6fc896c0b314da8d91d:net-tools/.signature
+f:c4d46d96cb53b950b9e8ebf18b25619e:liquid-dsp/Pkgfile
+f:ba696062ae6dd73d105185d3789db8a7:liquid-dsp/.footprint
+f:710ce26a5ad48031d1bd8f34b9d2d5ff:liquid-dsp/.signature
+f:ab7c60789e81262cbc7722ec47903e44:rtaudio/Pkgfile
+f:9bd28e266271d48653d9414576ca6c49:rtaudio/.footprint
+f:8d4c7a6c80145478b867f35ea7899dc1:rtaudio/.signature
+f:b5fe43ce5b29945d27e77554c88dedf9:soapy-sdr/Pkgfile
+f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
+f:f003a4ace0cbc6c3fe44b65b0062591c:soapy-sdr/.signature
