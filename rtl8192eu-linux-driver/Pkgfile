@@ -1,8 +1,8 @@
-# Description: Realtek 8192eu Wireless Driver
-# URL:         https://github.com/Mange/rtl8192eu-linux-driver
-# Packager:    Lin SiFuh
-# Maintainer:  
-# Depends on:  git
+# Description: 	Realtek 8192eu Wireless Driver
+# URL:         	https://github.com/Mange/rtl8192eu-linux-driver
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  	git
 
 name=rtl8192eu-linux-driver
 version=4.4.0
