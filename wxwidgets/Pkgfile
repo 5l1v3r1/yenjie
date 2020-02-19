@@ -2,7 +2,7 @@
 # URL: 		http://www.wxwidgets.org/
 # Packager: 	Lin SiFuh 
 # Maintainer: 
-# Depends on: 	gtk glu gst-plugins-base-compat gconf
+# Depends on: 	gtk glu gst-plugins-base gconf
 
 name=wxwidgets
 version=3.1.3
