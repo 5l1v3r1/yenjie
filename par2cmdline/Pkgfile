@@ -1,7 +1,7 @@
-# Description: Parchive: Parity Archive Volume Set
-# URL:         https://github.com/Parchive
-# Packager:    Lin SiFuh
-# Maintainer:  
+# Description: 	Parchive: Parity Archive Volume Set
+# URL:         	https://github.com/Parchive
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
 # Depends on:  
 
 name=par2cmdline
