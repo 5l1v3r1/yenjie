@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uD65yqrlOuUxSGTdCzlyg5p1DnwnuuFjdfNC6pwC275QBuBl6tFW0TDSjRpW/5kgRGfHECGVy6he/Y+ItoMvbg8=
+SHA256 (Pkgfile) = 5e396191a9c13eead8577ff7f52efd7de652dcfb12938b9ce2d9a518bb48401c
+SHA256 (.footprint) = 1dac71c99007e67312db1c167864c72b99627ad089df0d331aba40d402af8af7
+SHA256 (soapy-sdr-0.7.2.tar.gz) = 6eb4143fed115911884bdbbe6fe32dbd99b4ada210c9e126ac3c49c24414347a

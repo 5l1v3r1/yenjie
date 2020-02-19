@@ -1,0 +1,23 @@
+# Description:	An opensource API and runtime library for interfacing with SDR devices
+# URL:		http://www.pothosware.com/
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on:	cmake 
+
+name=soapy-sdr
+version=0.7.2
+release=1
+source=(https://github.com/pothosware/SoapySDR/archive/$name-$version.tar.gz)
+
+build() {
+
+	cd SoapySDR-$name-$version
+
+	mkdir build
+	cd build
+	cmake   -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+
+	make
+	make DESTDIR=$PKG install
+
+}
