@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKdarhKgALZG6i29v3n3DGEtfzRCp9Uc/kW+iBnPF1+91q/h1LMwywVT4fTyAlD1kdRwZ2tE13zSKp3KVkRdmQk=
-SHA256 (Pkgfile) = 0626c7579587fdc142637f39552b69de60d498f2be1cdf26b2b34ed03bc1f502
+RWQ0NN0w0eo0uPvmtGewCf2pQYKuXgrYHM3iHFJvKkhYWoQOnonx2csABl7uCHShADeZGvvOC0tY+cEnI9g8SVnE8w56JjZ8xQI=
+SHA256 (Pkgfile) = 916d03a8428cafaa3a6486032aba7851730d3783a59dfa23e68b1b531b9baa23
 SHA256 (.footprint) = fab43cb0c686a30f61a026715b3a6630a65156dc42258dd9082612b163c1d0fe
 SHA256 (platform-tools_r29.0.6-linux.zip) = cc9e9d0224d1a917bad71fe12d209dfffe9ce43395e048ab2f07dcfc21101d44
