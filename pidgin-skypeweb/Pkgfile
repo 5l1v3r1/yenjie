@@ -1,6 +1,6 @@
 # Description:	Skype Web plugin for Pidgin Messenger
 # URL:		http://pidgin.im/
-# Maintainer:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
 # Depends on:	pidgin 
 
 name=pidgin-skypeweb
