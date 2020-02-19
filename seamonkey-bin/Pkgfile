@@ -1,7 +1,7 @@
 # Description: 	Seamonkey Web-Browser
 # URL: 		http://www.seamonkey-project.org
-# Packager:	Lin SiFuh
-# Maintainer:
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on: 
 
 name=seamonkey-bin
