@@ -1,7 +1,7 @@
 # Description: 	Base networking utilities for Linux - DEPRECATED
 # URL:		http://net-tools.sourceforge.net/
-# Packager:	Lin SiFuh
-# Maintainer:
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on:	
 
 name=net-tools
