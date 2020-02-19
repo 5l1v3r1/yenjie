@@ -1,7 +1,7 @@
 # Description: 	A highly optimised library for bignum arithmetic
 # URL:		http://mpir.org/index.html
-# Packager:	Lin SiFuh
-# Maintainer:
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on:	yasm
 
 name=mpir
