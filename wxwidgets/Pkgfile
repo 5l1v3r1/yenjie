@@ -14,6 +14,7 @@ build() {
 	export CXXFLAGS="$CXXFLAGS -std=c++03 -Wno-deprecated"
 
 	cd wxWidgets-$version
+
 	./configure --prefix=/usr 	\
 		    --with-opengl 	\
 		    --enable-unicode 	\
@@ -26,9 +27,9 @@ build() {
 	rm -rf $PKG/usr/share/{locale,bakefile}
 	rm $PKG/usr/bin/{wxrc,wx-config}
  
-	mv $PKG/usr/share/aclocal/wxwin.m4 $PKG/usr/share/aclocal/wxwin-3.1.m4
+	mv $PKG/usr/share/aclocal/wxwin.m4 $PKG/usr/share/aclocal/wxwin-${version::-2}.m4
 
-	ln -s /usr/lib/wx/config/gtk2-unicode-3.1 $PKG/usr/bin/wx-config-3.1
-	ln -s /usr/lib/wx/config/gtk2-unicode-3.1 $PKG/usr/bin/wx-config
+	ln -s /usr/lib/wx/config/gtk2-unicode-${version::-2} $PKG/usr/bin/wx-config-${version::-2}
+	ln -s /usr/lib/wx/config/gtk2-unicode-${version::-2} $PKG/usr/bin/wx-config
 
 }
