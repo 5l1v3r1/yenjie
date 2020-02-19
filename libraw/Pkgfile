@@ -1,7 +1,7 @@
-# Description: A library for reading RAW files from digital camera photos
-# URL: https://www.libraw.org/
-# Packager: Lin SiFuh
-# Maintainer:
+# Description: 	A library for reading RAW files from digital camera photos
+# URL: 		https://www.libraw.org/
+# Packager: 
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
 # Depends on:
 
 name=libraw
