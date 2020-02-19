@@ -1,8 +1,8 @@
-# Description: Virtualisation software for x86 hardware (binary version, non-GPL)
-# URL:         http://www.virtualbox.org
-# Packager:    Lin SiFuh
-# Maintainer:  
-# Depends on:  virtualbox-bin
+# Description: 	Virtualisation software for x86 hardware (binary version, non-GPL)
+# URL:         	http://www.virtualbox.org
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  	virtualbox-bin
 
 name=virtualbox-extpack
 version=6.1.2
