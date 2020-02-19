@@ -1,7 +1,7 @@
 # Description: 	log4ccp is a simple to use C++ logging API.
 # URL: 		http://log4cpp.sourceforge.net/
-# Packager:	Lin SiFuh
-# Maintainer:	
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
 # Depends on:
 
 name=log4cpp
