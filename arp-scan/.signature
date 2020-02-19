@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uBBRrVuZLqo2UyYh3losh3hWZlJNsXhKDmXpdxImSgCOm+kpMUA39P676OMaIGuW2meZnnOmyzDM2qjU+cNSgAo=
-SHA256 (Pkgfile) = 00829f63764d21c4f3f6e9db9bb72847840fa1e6d1db1d602a682a836762fd7e
+RWQ0NN0w0eo0uPhC9PR9QE9eRd0HeZ4E6P1vI2ugRLv8+nLRbDamShOsHRvMq14szxlRztkuoAadU9k0rcOBdpfr/Ug/hVKy8Ag=
+SHA256 (Pkgfile) = 4827820f3d60d1ab23557ff50135eb0ee5cd4118b9a23e4d6261c9e832474485
 SHA256 (.footprint) = c859ab47e59fc3a3caf0c898288820fbe3ea2ad0a7ff1971b19959ec387dfe67
 SHA256 (arp-scan-1.9.tar.gz) = ce908ac71c48e85dddf6dd4fe5151d13c7528b1f49717a98b2a2535bd797d892
