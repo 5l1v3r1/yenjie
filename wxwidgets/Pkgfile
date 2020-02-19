@@ -1,0 +1,33 @@
+# Description: 	A cross-platform GUI Library 
+# URL: 		http://www.wxwidgets.org/
+# Packager: 	Lin SiFuh 
+# Maintainer: 
+# Depends on: gtk glu gst-plugins-base-compat gconf
+
+name=wxwidgets
+version=3.1.3
+release=1
+source=(https://github.com/wxWidgets/wxWidgets/archive/v$version/wxWidgets-v$version.tar.gz)
+
+build() {
+	
+	export CXXFLAGS="$CXXFLAGS -std=c++03 -Wno-deprecated"
+
+	cd wxWidgets-$version
+	./configure --prefix=/usr 	\
+		    --with-opengl 	\
+		    --enable-unicode 	\
+		    --enable-mediactrl	\
+		    --disable-universal 
+
+	make
+	make prefix=$PKG/usr install
+
+	rm -rf $PKG/usr/share/{locale,bakefile}
+	rm $PKG/usr/bin/{wxrc,wx-config}
+ 
+	mv $PKG/usr/share/aclocal/wxwin.m4 $PKG/usr/share/aclocal/wxwin-3.1.m4
+
+	ln -s /usr/lib/wx/config/gtk2-unicode-3.1 $PKG/usr/bin/wx-config-3.1
+	ln -s /usr/lib/wx/config/gtk2-unicode-3.1 $PKG/usr/bin/wx-config
+}

@@ -46,6 +46,7 @@ d:net-tools
 d:liquid-dsp
 d:rtaudio
 d:soapy-sdr
+d:wxwidgets
 f:37a9e88d71d69b74ca6eb296b668a100:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:f00d35e0173e1c4d2e628b6983c3ecd7:aircrack-ng/.signature
@@ -220,3 +221,7 @@ f:b5fe43ce5b29945d27e77554c88dedf9:soapy-sdr/Pkgfile
 f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
 f:f003a4ace0cbc6c3fe44b65b0062591c:soapy-sdr/.signature
 f:88ab5a807bf699df4d0ec87912b2c510:yenjie.pub
+f:beb26b5d168ac0824ae21b6a0c8be3a3:wxwidgets/.footprint
+f:8c27d79a7e78d475b370b7054efd93d5:wxwidgets/.md5sum
+f:0856b429c78cbea839f04774c3e9d5e6:wxwidgets/.signature
+f:724b281679c3de74094f178e8f914388:wxwidgets/Pkgfile
