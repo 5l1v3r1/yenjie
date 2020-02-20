@@ -148,12 +148,14 @@ f:42c59a0b64a794ef7a161fac287e4214:libraw/Pkgfile
 f:fe7271674494fe1a5e3d4834ecd325c1:libraw/.footprint
 f:b1007bc5d1ce5e3eb698b77a038ba284:libraw/.signature
 f:6eb0e0557be887166c444d30fe6b74d9:virtualbox-bin/vbox_build_module
-f:9abeba63f6977200e53b6b10cb69e013:virtualbox-bin/Pkgfile
+f:1859089d04533cf186053faeac735735:virtualbox-bin/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:virtualbox-bin/virtualbox;.partial
 f:3ce33328d23bf16bf9589fa36aa010cd:virtualbox-bin/60-vboxdrv.rules
 f:94ff0b617f68ae239a9c4485a9378c3d:virtualbox-bin/README
 f:98992c8d5afd80557dac447b8fb39a82:virtualbox-bin/post-install
 f:b154414f5b23d01a5ebc51360d4a3745:virtualbox-bin/.footprint
-f:54518c9ad9a02be4974ecaeae9c6c7c3:virtualbox-bin/.signature
+f:ec05e8ef611b78061ffe0868ed513ded:virtualbox-bin/.signature
+f:d41d8cd98f00b204e9800998ecf8427e:virtualbox-bin/virtualbox-bin=virtualbox;.partial
 f:f684b75fa4c85dea20fecaa4d9d4a41e:par2cmdline/Pkgfile
 f:96bdbad6850cf1d39d5bd1a58338e72a:par2cmdline/.signature
 f:3d1cc61cd3401e7e1bf140fcff28b4fa:par2cmdline/.footprint
