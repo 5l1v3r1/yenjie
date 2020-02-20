@@ -5,10 +5,10 @@
 # Depends on:  	libidl libxslt xorg-libxinerama xorg-libxcursor
 
 name=virtualbox-bin
-version=6.1.2
-sversion=135662
-release=3
-source=(http://download.virtualbox.org/VirtualBox-$version/VirtualBox-${version}-${sversion}-Linux_amd64.run \
+version=6.1.4
+sversion=136177
+release=1
+source=(https://download.virtualbox.org/${name::-4}/$version/VirtualBox-${version}-${sversion}-Linux_amd64.run \
         vbox_build_module 60-vboxdrv.rules)
 
 build () {
