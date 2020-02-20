@@ -73,5 +73,6 @@ build () {
 	     -iname '*license*' \
              \) -exec rm -rf '{}' \; || true
         rm -rf $PKG/usr/share/doc
+	rm -rf $PKG/usr/libexec
 
 }

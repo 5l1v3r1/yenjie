@@ -1756,9 +1756,6 @@ drwxr-xr-x	root/root	usr/lib/python3.7/site-packages/pmt/
 -rw-r--r--	root/root	usr/lib/python3.7/site-packages/pmt/pmt_to_python.py
 -rw-r--r--	root/root	usr/lib/python3.7/site-packages/pmt/pmt_to_python.pyc
 -rw-r--r--	root/root	usr/lib/python3.7/site-packages/pmt/pmt_to_python.pyo
-drwxr-xr-x	root/root	usr/libexec/
-drwxr-xr-x	root/root	usr/libexec/gnuradio/
--rwxr-xr-x	root/root	usr/libexec/gnuradio/grc_setup_freedesktop
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnuradio-grc.desktop
