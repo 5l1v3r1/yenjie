@@ -1,0 +1,21 @@
+# Description:	A Perl script which indents and reformats Perl scripts
+# URL:		http://perltidy.sourceforge.net/
+# Packager:	Lin SiFuh
+# Maintainer:
+# Depends on:
+
+name=perltidy
+version=20200110
+release=1
+source=(https://liquidtelecom.dl.sourceforge.net/project/$name/$version/Perl-Tidy-$version.tar.gz)
+
+build() {
+
+	cd Perl-Tidy-$version
+            perl Makefile.PL
+            make
+            make test
+            make DESTDIR=$PKG install
+
+
+}
