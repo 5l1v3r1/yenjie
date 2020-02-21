@@ -49,7 +49,8 @@ d:soapy-sdr
 d:wxwidgets
 d:cubicsdr
 d:soapy-rtlsdr
-f:37a9e88d71d69b74ca6eb296b668a100:README.md
+d:perltidy
+f:ccf3ddecf796af9117daac6b58ce74da:README.md
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -233,3 +234,6 @@ f:c24d438b1a9fd530cb2652456b792907:cubicsdr/.signature
 f:03671db4f7cdeedbd0c778286985dc79:soapy-rtlsdr/Pkgfile
 f:59955c221b94275facf2ede263d04412:soapy-rtlsdr/.footprint
 f:eebde8e00d2cf9920ae1eb082f9f40ec:soapy-rtlsdr/.signature
+f:300ac36bec3ef8df310f3255c75d08e0:perltidy/Pkgfile
+f:483c7924274edeea629be06cb397ea17:perltidy/.footprint
+f:72d9e07d66e826c7c350876579fee9a7:perltidy/.signature
