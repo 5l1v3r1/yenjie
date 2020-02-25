@@ -17,7 +17,7 @@ build() {
             make test
             make DESTDIR=$PKG install
 
-	rm $PKG/usr/lib/perl5/5.28/linux-thread-multi/perllocal.pod
-	rm $PKG/usr/lib/perl5/site_perl/5.28/linux-thread-multi/auto/Perl/Tidy/.packlist
+	find $PKG -name perllocal.pod -delete
+	find $PKG -name .packlist -delete
 
 }
