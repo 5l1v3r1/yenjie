@@ -50,6 +50,7 @@ d:wxwidgets
 d:cubicsdr
 d:soapy-rtlsdr
 d:perltidy
+d:clevo-xsm-wmi
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -236,3 +237,8 @@ f:eebde8e00d2cf9920ae1eb082f9f40ec:soapy-rtlsdr/.signature
 f:72c67c4325fbd753c921d9bfcaabb25a:perltidy/Pkgfile
 f:d28ad20189c50ffaa6d58fc1b6743a91:perltidy/.footprint
 f:3d3f3b79ce570a15ab9d63198d2c4cf8:perltidy/.signature
+f:10fd276e69c4e30fd9a8cdc68e15fad8:clevo-xsm-wmi/Pkgfile
+f:66231c799e4788e09798e5b1256d5c73:clevo-xsm-wmi/.footprint
+f:3c7eebe288c7a56525ca95f868eeb99f:clevo-xsm-wmi/post-install
+f:336edd2729bcb710b27771b3d79995dd:clevo-xsm-wmi/clevo-keys
+f:10b2fbc0b06e013d6a4ec212a084cf9b:clevo-xsm-wmi/.signature
