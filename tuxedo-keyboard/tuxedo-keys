@@ -1,0 +1,236 @@
+#!/bin/bash
+#
+#
+#    tuxedo-keys - a simple shell script for changing the keyboard settings
+#    for tuxedo/clevo/sagem/metabox type laptops.
+#
+#    Copyright (c) 2020 by Lin SiFuh
+#
+#    *************************************************************************
+#    *                                                                       *
+#    * This program is free software; you can redistribute it and/or modify  *
+#    * it under the terms of the GNU General Public License as published by  *
+#    * the Free Software Foundation; either version 2 of the License, or     *
+#    * (at your option) any later version.                                   *
+#    *                                                                       *
+#    *************************************************************************
+#
+#   **** USE AT YOUR OWN RISK ****
+#
+
+TUXEDO_VERSION="0.3"
+TUXEDO_DIR="/sys/devices/platform/tuxedo_keyboard/"
+TUXEDO_CLIST="black red green cyan blue magenta white yellow"
+# black=0x000000 blue=0x0000FF green=0x00FF00 cyan=0x00FFFF 
+# red=0xFF0000 magenta=0xFF00FF yellow=0xFFFF00 white=0x000000
+
+
+if [ "root" != "$USER" ]; then
+    echo "You are not root"
+    exit 1
+fi
+
+tuxedo_usage() {
+    echo ""
+    echo "Usage: tuxedo-keys [-m <number>] [-b <number>] [-c <color> [<color> ...]]"
+    echo ""
+    echo "Available values for OPTION include:"
+    echo ""
+    echo "[-b <number>]                Backlight brightness, a number between 0-99."
+    echo "[-c <color> [<color> ...]]   Keyboard color, accepts up to three arguments."
+    echo "[-m <number>]                Backlight mode, a number between 0-7."
+    echo "[-l]                         List all color choices."
+    echo "[-s]                         Check if kernel module is loaded."
+    echo "[-v]                         Show current version information."
+    echo "[-h]                         This information."
+    echo ""
+    exit 0
+}
+
+tuxedo_version() {
+    echo ""
+    echo "tuxedo-keys $TUXEDO_VERSION"
+    echo "(c) 2020 by Lin SiFuh"
+    echo "This program is distributed under the GNU GPL license"
+    echo ""
+    exit 0
+}
+
+tuxedo_status() {
+    if [ `lsmod | grep -o tuxedo_keyboard` ]; then
+        echo ""
+        echo "Module tuxedo_keyboard is loaded"
+        echo ""
+        echo "Current Keyboard Configuration:"
+        echo ""
+	echo -n "  Color:          "
+	for i in `cat $TUXEDO_DIR/color_{left,center,right}` ; do echo -n "$i " ; done
+	echo ""
+        echo "  Pattern:        `cat  $TUXEDO_DIR/mode`"
+        echo "  Backlight:      `cat  $TUXEDO_DIR/brightness`"
+        echo ""
+        exit $1
+    else
+        echo ""
+        echo "  The required module is not loaded"
+        echo ""
+        exit 0
+    fi
+}
+
+tuxedo_list() {
+    echo ""
+    echo "Available color choices are"
+    echo "  $TUXEDO_CLIST"
+    echo ""
+    exit 0
+}
+
+tuxedo_options(){
+    (( $# )) || tuxedo_usage
+    while getopts ":b:c:m:lvs" opt; do
+        case $opt in
+            b ) tuxedo_brightness=$OPTARG;;
+            c ) tuxedo_color=("$OPTARG")
+                until [[ $(eval "echo \${$OPTIND}") =~ ^-.* ]] || [ -z $(eval "echo \${$OPTIND}") ]; do
+                    tuxedo_color+=($(eval "echo \${$OPTIND}"))
+                    OPTIND=$((OPTIND + 1))
+                done
+                ;;
+            h ) tuxedo_usage; exit 0 ;;
+            l ) tuxedo_list; exit 0 ;;
+            m ) tuxedo_mode=$OPTARG;;
+            s ) tuxedo_status; exit 0 ;;
+            v ) tuxedo_version; exit 0 ;;
+            * ) tuxedo_usage; exit 0 ;;
+         esac
+    done
+}
+
+chk_tuxedo_mode() {
+if [[ -n "$tuxedo_mode" ]]; then 
+    if [[ "$tuxedo_mode" -le 7 ]]; then
+        if [[ "$tuxedo_mode" -ge 0 ]]; then :
+        else
+            echo "Only numbers between 0 and 7 can be used for the mode flag"
+            exit 0
+        fi
+    else
+               echo "Only numbers between 0 and 7 can be used for the mode flag"
+               exit 0
+    fi
+else
+    tuxedo_mode=`cat $TUXEDO_DIR/mode`
+fi
+}
+
+
+chk_tuxedo_brightness() {
+if [[ -n "$tuxedo_brightness" ]]; then
+    if [[ "$tuxedo_brightness" -le 99 ]]; then
+        if [[ "$tuxedo_brightness" -ge 0 ]]; then :
+        else
+            echo "Only numbers between 0 and 99 can be used for the brightness flag"
+            exit 0
+        fi
+    else
+        echo "Only numbers between 0 and 99 can be used for the brightness flag"
+        exit 0
+    fi
+else
+    tuxedo_brightness=`cat $TUXEDO_DIR/brightness`
+fi                
+}
+
+chk_tuxedo_color(){
+for i in ${tuxedo_color[@]} ; do
+    if grep -i -E -q "\b${i}\b" <<<${TUXEDO_CLIST} >/dev/null 2>&1 ; then :
+    else
+        echo ""    
+        echo "$i is not a valid color."
+        echo ""
+        echo "Available color choices are"
+        echo "    $TUXEDO_CLIST"
+        echo ""
+        exit 0
+    fi
+done
+
+if [[ -z "${tuxedo_color[0]}" ]]; then
+    tuxedo_color[0]=`cat $TUXEDO_DIR/color_left`
+fi
+
+if [[ -z "${tuxedo_color[1]}" ]]; then
+        tuxedo_color[1]=`cat $TUXEDO_DIR/color_center`
+fi
+
+if [[ -z "${tuxedo_color[2]}" ]]; then
+        tuxedo_color[2]=`cat $TUXEDO_DIR/color_right`
+fi
+
+tuxedo_color_left=`convert_color ${tuxedo_color[0]}` 
+tuxedo_color_center=`convert_color ${tuxedo_color[1]}`
+tuxedo_color_right=`convert_color ${tuxedo_color[2]}`
+}
+
+declare -A colors=(
+    [black]=000000
+    [blue]=0000ff
+    [green]=00ff00
+    [cyan]=00ffff
+    [red]=ff0000
+    [magenta]=ff00ff
+    [yellow]=ffff00
+    [white]=ffffff
+)
+
+for key in "${!colors[@]}" ; do
+    colors[${colors[$key]}]="$key"
+done
+
+convert_color() {
+    local color="${colors[${1,,}]}"
+    if [[ -n $color ]]
+    then
+      echo "$color"
+    else
+      echo "Unknown color $1" >&2
+      return 1
+    fi
+}
+
+###################################################
+# Main
+###################################################
+
+tuxedo_options $@
+
+chk_tuxedo_mode
+chk_tuxedo_brightness
+chk_tuxedo_color
+
+
+if [[ "$tuxedo_mode" != `cat $TUXEDO_DIR/mode` ]]; then 
+    echo "0x$tuxedo_mode" > $TUXEDO_DIR/mode
+fi
+
+if [[ "$tuxedo_brightness" != `cat $TUXEDO_DIR/brightness` ]]; then
+    echo "0x$tuxedo_brightness" > $TUXEDO_DIR/brightness
+fi
+
+if [[ "${tuxedo_color[0]}" != `cat $TUXEDO_DIR/color_left` ]]; then
+    echo "0x$tuxedo_color_left" > $TUXEDO_DIR/color_left
+#echo $tuxedo_color_left
+fi
+
+if [[ "${tuxedo_color[1]}" != `cat $TUXEDO_DIR/color_center` ]]; then
+    echo "0x$tuxedo_color_center" > $TUXEDO_DIR/color_center
+#echo $tuxedo_color_center
+fi
+
+if [[ "${tuxedo_color[2]}" != `cat $TUXEDO_DIR/color_right` ]]; then
+    echo "0x$tuxedo_color_right" > $TUXEDO_DIR/color_right
+#echo $tuxedo_color_right
+fi
+
+exit 0
