@@ -21,9 +21,6 @@
 TUXEDO_VERSION="0.3"
 TUXEDO_DIR="/sys/devices/platform/tuxedo_keyboard/"
 TUXEDO_CLIST="black red green cyan blue magenta white yellow"
-# black=0x000000 blue=0x0000FF green=0x00FF00 cyan=0x00FFFF 
-# red=0xFF0000 magenta=0xFF00FF yellow=0xFFFF00 white=0x000000
-
 
 if [ "root" != "$USER" ]; then
     echo "You are not root"
