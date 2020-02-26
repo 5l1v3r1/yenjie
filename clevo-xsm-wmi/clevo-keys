@@ -103,65 +103,65 @@ clevo_options(){
 }
 
 chk_clevo_mode() {
-if [[ -n "$clevo_mode" ]]; then 
-    if [[ "$clevo_mode" -le 7 ]]; then
-        if [[ "$clevo_mode" -ge 0 ]]; then :
+    if [[ -n "$clevo_mode" ]]; then 
+        if [[ "$clevo_mode" -le 7 ]]; then
+            if [[ "$clevo_mode" -ge 0 ]]; then :
+            else
+                echo "Only numbers between 0 and 7 can be used for the mode flag"
+                exit 0
+            fi
         else
             echo "Only numbers between 0 and 7 can be used for the mode flag"
             exit 0
         fi
     else
-               echo "Only numbers between 0 and 7 can be used for the mode flag"
-               exit 0
+        clevo_mode=`cat $CLEVO_DIR/kb_mode`
     fi
-else
-    clevo_mode=`cat $CLEVO_DIR/kb_mode`
-fi
 }
 
 
 chk_clevo_brightness() {
-if [[ -n "$clevo_brightness" ]]; then
-    if [[ "$clevo_brightness" -le 10 ]]; then
-        if [[ "$clevo_brightness" -ge 1 ]]; then :
+    if [[ -n "$clevo_brightness" ]]; then
+        if [[ "$clevo_brightness" -le 10 ]]; then
+            if [[ "$clevo_brightness" -ge 1 ]]; then :
+            else
+                echo "Only numbers between 1 and 10 can be used for the brightness flag"
+                exit 0
+            fi
         else
             echo "Only numbers between 1 and 10 can be used for the brightness flag"
             exit 0
         fi
     else
-        echo "Only numbers between 1 and 10 can be used for the brightness flag"
-        exit 0
-    fi
-else
-    clevo_brightness=`cat $CLEVO_DIR/kb_brightness`
-fi                
+        clevo_brightness=`cat $CLEVO_DIR/kb_brightness`
+    fi                
 }
 
 chk_clevo_color(){
-for i in ${clevo_color[@]} ; do
-    if grep -i -E -q "\b${i}\b" <<<${CLEVO_CLIST} >/dev/null 2>&1 ; then :
-    else
-        echo ""    
-        echo "$i is not a valid color."
-        echo ""
-        echo "Available color choices are"
-        echo "    $CLEVO_CLIST"
-        echo ""
-        exit 0
+    for i in ${clevo_color[@]} ; do
+        if grep -i -E -q "\b${i}\b" <<<${CLEVO_CLIST} >/dev/null 2>&1 ; then :
+        else
+            echo ""    
+            echo "$i is not a valid color."
+            echo ""
+            echo "Available color choices are"
+            echo "    $CLEVO_CLIST"
+            echo ""
+            exit 0
+        fi
+    done
+
+    if [[ -z "${clevo_color[0]}" ]]; then
+        clevo_color[0]=`awk {' print $1 '} < $CLEVO_DIR/kb_color`
     fi
-done
 
-if [[ -z "${clevo_color[0]}" ]]; then
-    clevo_color[0]=`awk {' print $1 '} < $CLEVO_DIR/kb_color`
-fi
+    if [[ -z "${clevo_color[1]}" ]]; then
+            clevo_color[1]=`awk {' print $2 '} < $CLEVO_DIR/kb_color`
+    fi
 
-if [[ -z "${clevo_color[1]}" ]]; then
-        clevo_color[1]=`awk {' print $2 '} < $CLEVO_DIR/kb_color`
-fi
-
-if [[ -z "${clevo_color[2]}" ]]; then
-        clevo_color[2]=`awk {' print $3 '} < $CLEVO_DIR/kb_color`
-fi
+    if [[ -z "${clevo_color[2]}" ]]; then
+            clevo_color[2]=`awk {' print $3 '} < $CLEVO_DIR/kb_color`
+    fi
 
 clevo_color="${clevo_color[0]} ${clevo_color[1]} ${clevo_color[2]}"
 }
