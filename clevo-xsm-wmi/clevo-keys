@@ -111,8 +111,8 @@ if [[ -n "$clevo_mode" ]]; then
             exit 0
         fi
     else
-               echo "Only numbers between 0 and 7 can be used for the mode flag"
-               exit 0
+        echo "Only numbers between 0 and 7 can be used for the mode flag"
+        exit 0
     fi
 else
     clevo_mode=`cat $CLEVO_DIR/kb_mode`
