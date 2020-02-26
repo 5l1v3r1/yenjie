@@ -51,6 +51,7 @@ d:cubicsdr
 d:soapy-rtlsdr
 d:perltidy
 d:clevo-xsm-wmi
+d:tuxedo-keyboard
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -242,3 +243,7 @@ f:10fd276e69c4e30fd9a8cdc68e15fad8:clevo-xsm-wmi/Pkgfile
 f:66231c799e4788e09798e5b1256d5c73:clevo-xsm-wmi/.footprint
 f:3c7eebe288c7a56525ca95f868eeb99f:clevo-xsm-wmi/post-install
 f:cdb4c69d10113004a6d212827cd9e6ee:clevo-xsm-wmi/.signature
+f:a60015053fb425fd13605976547c5f7b:tuxedo-keyboard/Pkgfile
+f:eb4fde3907ba166ef825d2b33614901a:tuxedo-keyboard/tuxedo_keyboard_conf.patch
+f:de4e999030dbfd08028d7fe0c6111d7d:tuxedo-keyboard/.signature
+f:50c49bfc9f39373b61cd1236ed815bd8:tuxedo-keyboard/.footprint
