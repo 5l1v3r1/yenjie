@@ -36,7 +36,7 @@ tuxedo_usage() {
     echo ""
     echo "Available values for OPTION include:"
     echo ""
-    echo "[-b <number>]                Backlight brightness, a number between 0-99."
+    echo "[-b <number>]                Backlight brightness, a number between 0-255."
     echo "[-c <color> [<color> ...]]   Keyboard color, accepts up to three arguments."
     echo "[-m <number>]                Backlight mode, a number between 0-7."
     echo "[-l]                         List all color choices."
@@ -64,7 +64,7 @@ tuxedo_status() {
         echo "Current Keyboard Configuration:"
         echo ""
 	echo -n "  Color:          "
-	for i in `cat $TUXEDO_DIR/color_{left,center,right}` ; do echo -n "$i " ; done
+	for i in `cat $TUXEDO_DIR/color_{left,center,right}` ; do echo -n "`convert_color $i ` " ; done
 	echo ""
         echo "  Pattern:        `cat  $TUXEDO_DIR/mode`"
         echo "  Backlight:      `cat  $TUXEDO_DIR/brightness`"
@@ -127,14 +127,14 @@ fi
 
 chk_tuxedo_brightness() {
 if [[ -n "$tuxedo_brightness" ]]; then
-    if [[ "$tuxedo_brightness" -le 99 ]]; then
+    if [[ "$tuxedo_brightness" -le 255 ]]; then
         if [[ "$tuxedo_brightness" -ge 0 ]]; then :
         else
-            echo "Only numbers between 0 and 99 can be used for the brightness flag"
+            echo "Only numbers between 0 and 255 can be used for the brightness flag"
             exit 0
         fi
     else
-        echo "Only numbers between 0 and 99 can be used for the brightness flag"
+        echo "Only numbers between 0 and 255 can be used for the brightness flag"
         exit 0
     fi
 else
@@ -209,28 +209,25 @@ chk_tuxedo_mode
 chk_tuxedo_brightness
 chk_tuxedo_color
 
-
 if [[ "$tuxedo_mode" != `cat $TUXEDO_DIR/mode` ]]; then 
     echo "0x$tuxedo_mode" > $TUXEDO_DIR/mode
 fi
 
 if [[ "$tuxedo_brightness" != `cat $TUXEDO_DIR/brightness` ]]; then
-    echo "0x$tuxedo_brightness" > $TUXEDO_DIR/brightness
+    tuxedo_brightness_hex=`printf '%x\n'$tuxedo_brightness`
+    echo "0x$tuxedo_brightness_hex" > $TUXEDO_DIR/brightness
 fi
 
 if [[ "${tuxedo_color[0]}" != `cat $TUXEDO_DIR/color_left` ]]; then
     echo "0x$tuxedo_color_left" > $TUXEDO_DIR/color_left
-#echo $tuxedo_color_left
 fi
 
 if [[ "${tuxedo_color[1]}" != `cat $TUXEDO_DIR/color_center` ]]; then
     echo "0x$tuxedo_color_center" > $TUXEDO_DIR/color_center
-#echo $tuxedo_color_center
 fi
 
 if [[ "${tuxedo_color[2]}" != `cat $TUXEDO_DIR/color_right` ]]; then
     echo "0x$tuxedo_color_right" > $TUXEDO_DIR/color_right
-#echo $tuxedo_color_right
 fi
 
 exit 0

@@ -244,7 +244,7 @@ f:66231c799e4788e09798e5b1256d5c73:clevo-xsm-wmi/.footprint
 f:3c7eebe288c7a56525ca95f868eeb99f:clevo-xsm-wmi/post-install
 f:fb17cef2c27b7b6644f9e65ce06044b5:clevo-xsm-wmi/.signature
 f:7b9f8ed3723032ef601f1e0068e8736e:tuxedo-keyboard/Pkgfile
-f:faf11b36b7b66d34dd2207d51f0f722f:tuxedo-keyboard/tuxedo-keys
+f:bb9addf7b9a001a7945a1481c684bbeb:tuxedo-keyboard/tuxedo-keys
 f:eb4fde3907ba166ef825d2b33614901a:tuxedo-keyboard/tuxedo_keyboard_conf.patch
-f:18c5687d2dca2d8a9e00f08013cfb46b:tuxedo-keyboard/.signature
+f:a4fd594f2c75211fe937152e2ddd64ce:tuxedo-keyboard/.signature
 f:aa723786921f4375d1114c773bbcbf3c:tuxedo-keyboard/.footprint
