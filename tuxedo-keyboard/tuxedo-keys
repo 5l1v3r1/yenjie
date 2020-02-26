@@ -158,11 +158,11 @@ if [[ -z "${tuxedo_color[0]}" ]]; then
 fi
 
 if [[ -z "${tuxedo_color[1]}" ]]; then
-        tuxedo_color[1]=`cat $TUXEDO_DIR/color_center`
+    tuxedo_color[1]=`cat $TUXEDO_DIR/color_center`
 fi
 
 if [[ -z "${tuxedo_color[2]}" ]]; then
-        tuxedo_color[2]=`cat $TUXEDO_DIR/color_right`
+    tuxedo_color[2]=`cat $TUXEDO_DIR/color_right`
 fi
 
 tuxedo_color_left=`convert_color ${tuxedo_color[0]}` 
