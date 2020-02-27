@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uOqy3iq+sUg+ocfzn/Yv/QxSDD+YdgAwypKOVjilDRQjFHnpX4+CpAhG4IhnP6V01PvrmBVnncsfVsCgOw58eQ4=
+RWQ0NN0w0eo0uOuOmjqCUjjcv7ACYry1/SyShUhdod32v0psmDTej4/6VEGtsEGSe8qpdGKHKx7ZSSvxVBNfNaWv1ctlr2ueRQk=
 SHA256 (Pkgfile) = c4e9f10f1920aa6103d983c4a9afc060670bba2085b42214af1a92466f6dd3b7
 SHA256 (.footprint) = b25253354f5ae9f82d3850946f322bafe03ea05f1cf94f50c1ed65336c3321c9
 SHA256 (tuxedo_keyboard_conf.patch) = c913fecdc5b601b7ddee371bb589bc1ed6e9296cf9ede87cb37db37eab8c75e5
-SHA256 (tuxedo-keys) = 1e872bdeccf92005224f7506e1704169e66db56d82d86560996dff02cb959d4e
+SHA256 (tuxedo-keys) = e1a7545acd36a1ad557f26c551c30c7b913b557d5170ac9756230ef28621a458

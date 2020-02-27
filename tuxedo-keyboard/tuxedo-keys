@@ -1,6 +1,5 @@
 #!/bin/bash
 #
-#
 #    tuxedo-keys - a simple shell script for changing the keyboard settings
 #    for tuxedo/clevo/sagem/metabox type laptops.
 #
@@ -19,7 +18,7 @@
 #
 
 # Do not change these variables unless you know what you are doing.
-TUXEDO_VERSION="0.3"
+TUXEDO_VERSION="0.4"
 TUXEDO_DIR="/sys/devices/platform/tuxedo_keyboard/"
 TUXEDO_COLOR_FILES="color_left color_center color_right"
 TUXEDO_CLIST="black red green cyan blue magenta white yellow"
@@ -95,7 +94,7 @@ tuxedo_options(){
   (( $# )) || tuxedo_usage
   while getopts ":b:c:m:lvsh" opt; do
     case $opt in
-      b ) tuxedo_brightness="${OPTARG}" ;;
+      b ) tuxedo_bright="${OPTARG}" ;;
       c ) tuxedo_color=("$OPTARG") 
         until [[ $(eval "echo \${$OPTIND}") =~ ^-.* ]] \
           || [ -z "$(eval "echo \${$OPTIND}")" ]; do
@@ -115,13 +114,9 @@ tuxedo_options(){
 
 chk_tuxedo_mode() {
 # Check if the user input for the mode is allowed or if it exists at all.
-  if [[ -n "${tuxedo_mode}" ]]; then 
-    if [[ "${tuxedo_mode}" -le 7 ]]; then
-      if [[ "${tuxedo_mode}" -ge 0 ]]; then :
-      else
-        echo "Only numbers between 0 and 7 can be used for the mode flag"
-        exit 0
-      fi
+  if [[ -n "${tuxedo_mode}" ]]; then
+    if [[ "${tuxedo_mode}" -le 7 ]] && [[ "${tuxedo_mode}" -ge 0 ]] ; then 
+      :
     else
       echo "Only numbers between 0 and 7 can be used for the mode flag"
       exit 0
@@ -131,21 +126,17 @@ chk_tuxedo_mode() {
   fi
 }
 
-chk_tuxedo_brightness() {
+chk_tuxedo_bright() {
 # Check if the user input for brightness is allowed or if it exists at all.
-  if [[ -n "${tuxedo_brightness}" ]]; then
-    if [[ "${tuxedo_brightness}" -le 255 ]]; then
-      if [[ "${tuxedo_brightness}" -ge 0 ]]; then :
+  if [[ -n "${tuxedo_bright}" ]]; then
+    if [[ "${tuxedo_bright}" -le 255 ]] && [[ "${tuxedo_bright}" -ge 0 ]]; then 
+        :
       else
         echo "Only numbers between 0 and 255 can be used for the brightness flag"
         exit 0
       fi
-    else
-      echo "Only numbers between 0 and 255 can be used for the brightness flag"
-      exit 0
-    fi
   else
-    tuxedo_brightness="$(cat ${TUXEDO_DIR}/brightness)"
+    tuxedo_bright="$(cat ${TUXEDO_DIR}/brightness)"
   fi            
 }
 
@@ -208,10 +199,10 @@ tuxedo_write() {
     echo "0x${tuxedo_mode}" > ${TUXEDO_DIR}/mode
   fi
 
-  if [[ "${tuxedo_brightness}" != "$(cat ${TUXEDO_DIR}/brightness)" ]]; then
+  if [[ "${tuxedo_bright}" != "$(cat ${TUXEDO_DIR}/brightness)" ]]; then
     # Convert this string to hexadecimal as it uses numbers between 0 and 255 
-    tuxedo_brightness_hex="$(printf '%x\n'"${tuxedo_brightness}")"
-    echo "0x${tuxedo_brightness_hex}" > ${TUXEDO_DIR}/brightness
+    tuxedo_bright_hex="$(printf '%x\n'"${tuxedo_bright}")"
+    echo "0x${tuxedo_bright_hex}" > ${TUXEDO_DIR}/brightness
   fi
 
   if [[ "${tuxedo_color[0]}" != "$(cat ${TUXEDO_DIR}/color_left)" ]]; then
@@ -228,7 +219,7 @@ tuxedo_write() {
 tuxedo_options "$@"
 
 chk_tuxedo_mode
-chk_tuxedo_brightness
+chk_tuxedo_bright
 chk_tuxedo_color
 tuxedo_write
 
