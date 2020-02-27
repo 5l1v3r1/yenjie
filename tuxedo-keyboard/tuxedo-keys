@@ -204,7 +204,7 @@ tuxedo_write() {
 # Here we write everything to file only if the new settings are different.
   if [[ "${tuxedo_mode}" != "$(cat ${TUXEDO_DIR}/mode)" ]]; then
     # We didn't convert this string to hexadecimal as it only uses
-    # numbers betwen 0 and 7
+    # numbers between 0 and 7
     echo "0x${tuxedo_mode}" > ${TUXEDO_DIR}/mode
   fi
 
