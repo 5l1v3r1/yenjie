@@ -63,13 +63,13 @@ tuxedo_status() {
     echo ""
     echo "Current Keyboard Configuration:"
     echo ""
-	 echo -n "  Color:          "
-	 for i in ${TUXEDO_COLOR_FILES}; do
+    echo -n "  Color:          "
+    for i in ${TUXEDO_COLOR_FILES}; do
       grep -v '^ *#' < "${TUXEDO_DIR}/${i}" | while IFS= read -r line ; do
         echo -n "$(convert_color "${line}") "
       done
     done
-	 echo ""
+    echo ""
     echo "  Pattern:        $(cat  ${TUXEDO_DIR}/mode)"
     echo "  Backlight:      $(cat  ${TUXEDO_DIR}/brightness)"
     echo ""
