@@ -69,8 +69,8 @@ tuxedo_status() {
       done
     done
     echo ""
-    echo "  Pattern:        $(cat  ${TUXEDO_DIR}/mode)"
-    echo "  Backlight:      $(cat  ${TUXEDO_DIR}/brightness)"
+    echo "  Pattern:        $(<  ${TUXEDO_DIR}/mode)"
+    echo "  Backlight:      $(<  ${TUXEDO_DIR}/brightness)"
     echo ""
     exit 1
   else
@@ -122,7 +122,7 @@ chk_tuxedo_mode() {
       exit 0
     fi
   else
-    tuxedo_mode="$(cat ${TUXEDO_DIR}/mode)"
+    tuxedo_mode="$(< ${TUXEDO_DIR}/mode)"
   fi
 }
 
@@ -136,7 +136,7 @@ chk_tuxedo_bright() {
         exit 0
       fi
   else
-    tuxedo_bright="$(cat ${TUXEDO_DIR}/brightness)"
+    tuxedo_bright="$(< ${TUXEDO_DIR}/brightness)"
   fi            
 }
 
@@ -171,17 +171,17 @@ convert_color() {
 chk_tuxedo_color(){
 # Each color input will be verified against a list of allowed colors
   if [[ -z "${tuxedo_color[0]}" ]]; then
-    tuxedo_color[0]="$(cat ${TUXEDO_DIR}/color_left)"
+    tuxedo_color[0]="$(< ${TUXEDO_DIR}/color_left)"
   else
     tuxedo_color_left="$(convert_color "${tuxedo_color[0]}")"
   fi
   if [[ -z "${tuxedo_color[1]}" ]]; then
-    tuxedo_color[1]="$(cat ${TUXEDO_DIR}/color_center)"
+    tuxedo_color[1]="$(< ${TUXEDO_DIR}/color_center)"
   else
     tuxedo_color_center="$(convert_color "${tuxedo_color[1]}")"
   fi
   if [[ -z "${tuxedo_color[2]}" ]]; then
-    tuxedo_color[2]="$(cat ${TUXEDO_DIR}/color_right)"
+    tuxedo_color[2]="$(< ${TUXEDO_DIR}/color_right)"
   else
     tuxedo_color_right="$(convert_color "${tuxedo_color[2]}")"
   fi
@@ -193,23 +193,23 @@ chk_tuxedo_color(){
 
 tuxedo_write() {
 # Here we write everything to file only if the new settings are different.
-  if [[ "${tuxedo_mode}" != "$(cat ${TUXEDO_DIR}/mode)" ]]; then
+  if [[ "${tuxedo_mode}" != "$(< ${TUXEDO_DIR}/mode)" ]]; then
     # We didn't convert this string to hexadecimal as it only uses
     # numbers between 0 and 7
     echo "0x${tuxedo_mode}" > ${TUXEDO_DIR}/mode
   fi
 
-  if [[ "${tuxedo_bright}" != "$(cat ${TUXEDO_DIR}/brightness)" ]]; then
+  if [[ "${tuxedo_bright}" != "$(< ${TUXEDO_DIR}/brightness)" ]]; then
     # Convert this string to hexadecimal as it uses numbers between 0 and 255 
     tuxedo_bright_hex="$(printf '%x\n'"${tuxedo_bright}")"
     echo "0x${tuxedo_bright_hex}" > ${TUXEDO_DIR}/brightness
   fi
 
-  if [[ "${tuxedo_color[0]}" != "$(cat ${TUXEDO_DIR}/color_left)" ]]; then
+  if [[ "${tuxedo_color[0]}" != "$(< ${TUXEDO_DIR}/color_left)" ]]; then
     echo "0x${tuxedo_color_left}" > ${TUXEDO_DIR}/color_left
-      if [[ "${tuxedo_color[1]}" != "$(cat ${TUXEDO_DIR}/color_center)" ]]; then
+      if [[ "${tuxedo_color[1]}" != "$(< ${TUXEDO_DIR}/color_center)" ]]; then
         echo "0x${tuxedo_color_center}" > ${TUXEDO_DIR}/color_center
-          if [[ "${tuxedo_color[2]}" != "$(cat ${TUXEDO_DIR}/color_right)" ]]; then
+          if [[ "${tuxedo_color[2]}" != "$(< ${TUXEDO_DIR}/color_right)" ]]; then
             echo "0x${tuxedo_color_right}" > ${TUXEDO_DIR}/color_right
          fi
       fi
