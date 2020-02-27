@@ -69,8 +69,8 @@ tuxedo_status() {
       done
     done
     echo ""
-    echo "  Pattern:        $(<  ${TUXEDO_DIR}/mode)"
-    echo "  Backlight:      $(<  ${TUXEDO_DIR}/brightness)"
+    echo "  Pattern:        $(< ${TUXEDO_DIR}/mode)"
+    echo "  Backlight:      $(< ${TUXEDO_DIR}/brightness)"
     echo ""
     exit 1
   else
