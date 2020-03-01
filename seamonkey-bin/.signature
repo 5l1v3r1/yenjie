@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uEyk8Ep6/yNIu2AdybtUcvJCGNOuXc5YLmZeVQMAkeiSDyWsN2V2a1MfJuUCHmKa1YZ1UaW4qUb+27l9osibKw4=
-SHA256 (Pkgfile) = 40a3c98ad511e479426feaa77b5972c2f5b7c52284190740aa35a3e51c5666d4
-SHA256 (.footprint) = 2c2af3476c0fda62d8f35ad1ef8a6b45d66635ed663f3c4ae96a6ae9c2017836
-SHA256 (seamonkey-2.49.5.tar.bz2) = 9cc5160f681098191b99eacd7dfc9f799df5f1a273d9e5ac81cc805f5348ec7f
+RWQ0NN0w0eo0uJQdRalY7WyQyrsMtT4+tyv2RBYee9ddu5Oz/SLeKNi2vxhe6sfMS1Lg/FPB372OO+aYiUxvjykH4dvSQjN17QU=
+SHA256 (Pkgfile) = e66dd0ddbb992749bd200e8878b0ab66c2d430f78948f2850f2bde209c60181b
+SHA256 (.footprint) = c87557d09f7c57d6ad303fa70ddca360ab10ac9303b48eca9862d3d2d6c322f8
+SHA256 (seamonkey-2.53.1.en-US.linux-x86_64.tar.bz2) = 4e7400633b93af31f8301562d2377bff21f18672248416e7224a7c96b5eacc68

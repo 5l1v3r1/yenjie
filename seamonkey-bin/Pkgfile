@@ -5,10 +5,10 @@
 # Depends on: 
 
 name=seamonkey-bin
-version=2.49.5
+version=2.53.1
 release=1
-source=(https://archive.mozilla.org/pub/${name//-bin/}/releases/$version/linux-x86_64/en-US/${name//-bin/}-$version.tar.bz2)
-
+source=(https://archive.mozilla.org/pub/${name//-bin/}/releases/$version/linux-x86_64/en-US/${name//-bin/}-$version.en-US.linux-x86_64.tar.bz2)
+#https://archive.mozilla.org/pub/seamonkey/releases/2.53.1/linux-x86_64/en-US/seamonkey-2.53.1.en-US.linux-x86_64.tar.bz2
 build() {
 
 	cd ${name//-bin/}
