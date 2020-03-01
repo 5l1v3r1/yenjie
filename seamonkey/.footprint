@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ld.so.conf.d/
--rw-r--r--  root root etc/ld.so.conf.d/seamonkey.conf
+-rw-r--r--	root/root	etc/ld.so.conf.d/seamonkey.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/seamonkey -> /usr/lib/seamonkey-2.49.5/seamonkey
