@@ -52,7 +52,7 @@ d:soapy-rtlsdr
 d:perltidy
 d:clevo-xsm-wmi
 d:tuxedo-keyboard
-f:ccf3ddecf796af9117daac6b58ce74da:README.md
+d:seamonkey
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -249,3 +249,6 @@ f:60cb28a71e6adf3d211cd4eb3b637c9b:tuxedo-keyboard/tuxedo-keys
 f:eb4fde3907ba166ef825d2b33614901a:tuxedo-keyboard/tuxedo_keyboard_conf.patch
 f:160724f5cf79d2bfe00ca9fd22748d79:tuxedo-keyboard/.signature
 f:aa723786921f4375d1114c773bbcbf3c:tuxedo-keyboard/.footprint
+f:4308f7b11cfa027bd4975b060de5db88:seamonkey/Pkgfile
+f:999e47c000d6cfe771e94a55eb06a3f3:seamonkey/.footprint
+f:109e6418cb303e22394cef722f6d06ae:seamonkey/.signature
