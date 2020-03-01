@@ -1,8 +1,8 @@
 # Description: 	Seamonkey Web-Browser
-# URL: 		http://www.seamonkey-project.org
+# URL: 		      http://www.seamonkey-project.org
 # Packager:	
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
-# Depends on: 
+# Maintainer:	  Lin SiFuh, #crux at freenode dot net 	
+# Depends on:   gtk3 xorg-libxinerama xorg-libxcursor xorg-libxcomposite dbus-glib xorg-libxt
 
 name=seamonkey-bin
 version=2.53.1
