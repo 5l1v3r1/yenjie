@@ -1,0 +1,22 @@
+# Description:  Ntop is a network watcher (OLD VERSION)
+# URL:          https://www.ntop.org/
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net
+# Depends on:	libpcap
+
+name=ntop
+version=1.2a2
+release=1
+source=(ftp://totem.fix.no/pub/mirrors/misc/$name-$version.tar.gz)
+
+build() {
+
+	cd $name-$version
+  mkdir -p $PKG/usr/sbin
+
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR=$PKG install
+
+}
