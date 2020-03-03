@@ -14,9 +14,15 @@ build() {
 	cd $name-$version
   mkdir -p $PKG/usr/sbin
 
-  ./configure --prefix=/usr
+  ./configure --prefix=/usra    \
+              --enable-threads  \
+              --enable-lsof     \
+              --enable-queso    \
+              --enable-neped
 
   make
   make DESTDIR=$PKG install
+
+ chmod 4755 $PKG/usr/sbin/ntop
 
 }
