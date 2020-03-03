@@ -14,7 +14,7 @@ build() {
 	cd $name-$version
   mkdir -p $PKG/usr/sbin
 
-  ./configure --prefix=/usra    \
+  ./configure --prefix=/usr     \
               --enable-threads  \
               --enable-lsof     \
               --enable-queso    \
