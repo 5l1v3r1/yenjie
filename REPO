@@ -54,6 +54,7 @@ d:clevo-xsm-wmi
 d:tuxedo-keyboard
 d:ntop
 d:motion
+d:v4l-utils
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -253,7 +254,11 @@ f:aa723786921f4375d1114c773bbcbf3c:tuxedo-keyboard/.footprint
 f:a9002a04a30aaef06edb2a7c8cf19b75:ntop/Pkgfile
 f:50420c3a4de10a8e3a7f1dc2f3bb2daa:ntop/.footprint
 f:1d74a4f612826e2956e65ebca68a2699:ntop/.signature
-f:cc63c1946927870fe839d987cea63b22:motion/Pkgfile
+f:dd327b572cb7d214fb2c14eefd6c5432:motion/Pkgfile
 f:88e5b4b11c82a77a7491d63824e91a98:motion/.footprint
 f:c6d8434cb9031e2c7e6a1fab99cdd3f1:motion/motion
 f:93f0b33aeac42da351cc0611df093b4f:motion/.signature
+f:cd367a579fc7dc8617972afb9007c847:v4l-utils/Pkgfile
+f:6fb273f7244287d7551522faaf4bfe41:v4l-utils/.md5sum
+f:bca0462ff00053ea257c2b85ad7b1392:v4l-utils/.footprint
+f:033b862600307ae294017577485bdbff:v4l-utils/.signature
