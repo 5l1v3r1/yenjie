@@ -1,7 +1,7 @@
 NOTE:
 
-  This port enables both gtk2 and gtk3. Qt has been disabled as it uses qt3 
-  and qt4. For Qt5 support you will need to build fcitx-qt5 port separately.
+  This port enables both GTK2 and GTK3. Qt has been disabled as it uses Qt3 
+  and Qt4. For Qt5 support you will need to build fcitx-qt5 port separately.
 
   You will also need to add the following lines to your profile.
 
@@ -46,7 +46,7 @@ EXTRA:
       says 'Only Show Current Language'. I typed in the search box 'Pinyin' 
       and selected 'Pinyin' only. I then went to the 'Global Config' tab and
       under 'Extra key for trigger input method' I selected 'ALT_L_SHIFT'.
-    - I then opened up a GTK2, GTK3 and a Qt5 applications and tested it on
+    - I then opened up a GTK2, GTK3 and a Qt5 application and tested it on
       each of them. The input method worked fine using the left 'Alt+Shift' 
       keys to change from English to Chinese. I didn't change any other 
       settings.
