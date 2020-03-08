@@ -1,0 +1,8 @@
+This port enables both gtk2 and gtk3. Qt has been disabled as it uses qt3 
+and qt4. For Qt5 support you will need to build fcitx-qt5 port separately.
+
+You will also need to add the following lines to your profile.
+
+GTK_IM_MODULE=xim
+QT_IM_MODULE=xim
+XMODIFIERS="@im=fcitx"
