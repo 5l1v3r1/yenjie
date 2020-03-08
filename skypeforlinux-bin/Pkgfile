@@ -1,7 +1,7 @@
-# Description:	Skype Messenger for Linux
-# URL:		http://pidgin.im/
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
-# Depends on:	cups gconf libidl orbit libsecret speexdsp pulseaudio-alsa alsa-plugins
+# Description:  Skype Messenger for Linux
+# URL:          http://pidgin.im/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 		
+# Depends on:   cups gconf libidl orbit libsecret speexdsp pulseaudio-alsa alsa-plugins
 
 name=skypeforlinux-bin
 version=8.57.76.109
@@ -17,7 +17,7 @@ build(){
 
 	cp $SRC/usr/bin/${name//-bin/} $PKG/opt/bin
 	chmod 0755 $PKG/opt/bin/${name//-bin/}
-  chmod 4755 $PKG/opt/share/${name//-bin/}/chrome-sandbox
+#  chmod 4755 $PKG/opt/share/${name//-bin/}/chrome-sandbox
 	cp -rf $SRC/usr/share/* $PKG/opt/share/ 
 
 	rm -rf $PKG/opt/share/doc/
