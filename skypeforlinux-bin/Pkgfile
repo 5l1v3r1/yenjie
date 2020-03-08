@@ -17,6 +17,7 @@ build(){
 
 	cp $SRC/usr/bin/${name//-bin/} $PKG/opt/bin
 	chmod 0755 $PKG/opt/bin/${name//-bin/}
+  chmod 4755 $PKG/opt/share/${name//-bin/}/chrome-sandbox
 	cp -rf $SRC/usr/share/* $PKG/opt/share/ 
 
 	rm -rf $PKG/opt/share/doc/
