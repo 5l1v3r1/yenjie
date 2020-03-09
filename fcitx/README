@@ -23,18 +23,17 @@ EXTRA:
       ~/.xinitrc. On the other machine I edited ~/.xsession as it uses xdm 
       as its login manager. I added the following lines. 
         
-        GTK_IM_MODULE=xim
-        QT_IM_MODULE=xim
-        XMODIFIERS="@im=fcitx"
+        export GTK_IM_MODULE=xim
+        export QT_IM_MODULE=xim
+        export XMODIFIERS="@im=fcitx"
 
-    - Also I added the same three lines to my ~/.profile. My ~/.bashrc is 
-      a link to ~/.profile.
     - To get fcitx daemon to start automatically when I log in. I added 
       this extra line to ~/.xinitrc on the slim machine and to ~/.xsession 
       on the xdm machine.
         
         /usr/bin/fcitx-autostart
 
+    - The rc startup script for dbus was already enabled.
     - I had already installed all the fonts in the xorg repository as well 
       as the fonts from romster's and alan's repository. The reason is that 
       I do a lot of work abroad and I need to be able to read documents and 
