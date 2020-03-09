@@ -1,12 +1,12 @@
 # Description:  GTK+ text editor targeted towards programmers and web designers
 # URL:          http://bluefish.openoffice.nl/
 # Packager:	
-# Maintainer:	Lin SiFuh, #crux at freenode dot net, #crux at freenode dot net
-# Depends on:   gtk
+# Maintainer:   Lin SiFuh, #crux at freenode dot net, #crux at freenode dot net
+# Depends on:   gtk3
 
 name=bluefish
 version=2.2.11
-release=1
+release=2
 source=(https://www.bennewitz.com/$name/stable/source/$name-$version.tar.gz)
 
 build() {
@@ -16,12 +16,13 @@ build() {
 
 	cd $name-$version
 	
-	./configure --prefix=/usr               \ 
-		    --mandir=/usr/share/man 		\
-		    --disable-nls --with-gtk2 		\
-		    --disable-update-databases 		\
-        	    --disable-xml-catalog-update 	\
-		    --disable-spell-check
+	./configure --with-gtk3 		              \
+              --disable-nls                 \
+              --prefix=/usr                 \
+              --disable-spell-check         \
+              --mandir=/usr/share/man       \
+              --disable-update-databases 		\
+              --disable-xml-catalog-update 	
 
 	make
 	make DESTDIR=$PKG install
