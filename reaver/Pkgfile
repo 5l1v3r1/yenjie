@@ -7,8 +7,7 @@
 name=reaver
 version=1.4
 release=1
-source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/${name}-wps/${name}-${version}.tar.gz \
-         Makefile_in.patch)
+source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/${name}-wps/${name}-${version}.tar.gz)
 
 build() {
 
@@ -18,15 +17,12 @@ build() {
 
    cd $name-$version/src
   
-   patch -i ../../Makefile_in.patch
-
   ./configure --prefix=/usr
 
-  mkdir -p $PKG/usr/{bin,etc}
-
   make
-  make DESTDIR=$PKG install
 
-  chmod -R 644 $PKG/usr/etc/${name} 
+  install -D -m 644 ${name}.db $PKG/usr/etc/${name}/${name}.db
+  install -D -m 755 ${name} $PKG/usr/bin/${name}
+  install -D -m 755 wash $PKG/usr/bin/wash
 
 }

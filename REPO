@@ -287,10 +287,9 @@ f:c0d69b2f8b9b70340b3ad61db4df35de:fcitx-qt5/.signature
 f:7275239d992f5605f978800b5e9fd847:hcxtools/Pkgfile
 f:ad420b6f2634cbc9f30e714da5d3a97f:hcxtools/.footprint
 f:435405d48e30c58212573aafeae77d3d:hcxtools/.signature
-f:ddd5e200d6fff921460398fa90a7dae5:reaver/Pkgfile
-f:0d9dd7d511a3ef912368fae9a58a8e0e:reaver/.footprint
-f:ec0a622754ab7130c3486920d80d9f28:reaver/Makefile_in.patch
-f:25b0eca18cab657614a6fbe0b76f02d6:reaver/.signature
+f:8960e4088c670bffef461701a5c8828b:reaver/Pkgfile
+f:43b3440d1487f9740ff46d44319c6806:reaver/.footprint
+f:e6ae6f18b0df90d182730d6ec4b98456:reaver/.signature
 f:31c954f86b873277c43c57e765b06ce1:hcxdumptool/Pkgfile
 f:cc06598a863a9c372698779b479a7dba:hcxdumptool/.footprint
 f:8c410ed242344d0fb25ba5cf70ce645c:hcxdumptool/.signature
