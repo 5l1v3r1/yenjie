@@ -1,0 +1,30 @@
+# Description:  Brute force attack against Wifi Protected Setup (WPS) 
+# URL:          https://code.google.com/archive/p/reaver-wps/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libpcap sqlite3
+
+name=reaver
+version=1.4
+release=1
+source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/${name}-wps/${name}-${version}.tar.gz \
+         Makefile_in.patch)
+
+build() {
+
+  if [ -n "$(pkginfo -i | grep '^ccache ')" ]; then
+    export PATH="/sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin"
+  fi
+
+   cd $name-$version/src
+  
+   patch -i ../../Makefile_in.patch
+
+  ./configure --prefix=/usr
+
+  mkdir -p $PKG/usr/{bin,etc}
+
+  make
+  make DESTDIR=$PKG install
+
+}

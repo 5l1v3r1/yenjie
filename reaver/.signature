@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uBgraWUhBHfKiS3Abec3+mMKUZJl2F/hlwHisu46KuTU22J5S37ykxwhuk04iqZyk6JK+uqwbWMQqGwjSOs5/Ak=
+SHA256 (Pkgfile) = 9a34002788671dbc9c4fc32c14a56ed5397836b7eea1324ee85de7d48c01dbe4
+SHA256 (.footprint) = 5c3ac01e5a1e61c69d571eaece7caee0ed958543e1487c226767d0319f0b008f
+SHA256 (reaver-1.4.tar.gz) = add3050a4a05fe0ab6bfb291ee2de8e9b8a85f1e64ced93ee27a75744954b22d
+SHA256 (Makefile_in.patch) = c8962c840ca2d81c494859c8b0cb9a6822071e8b568c7a159cb700f16c4395a4

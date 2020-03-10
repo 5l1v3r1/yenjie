@@ -1,0 +1,36 @@
+--- Makefile.in.org	2020-03-10 12:40:49.009999950 +0000
++++ Makefile.in	2020-03-10 13:00:15.486666643 +0000
+@@ -6,6 +6,8 @@
+ CONFDIR=@sysconfdir@/@target@
+ CFLAGS=-DCONF_DIR='"$(CONFDIR)"' -DREAVER_DATABASE='"$(CONFDIR)/reaver.db"' @CFLAGS@
+ LDFLAGS=$(LIBWPS_DIR)/*.o wps/*.o tls/bignum.o tls/libtls.a utils/libutils.a crypto/libcrypto.a lwe/libiw.a @LDFLAGS@
++DESTDIR=@DESTDIR@
++INSTALLDIR=$(DESTDIR)/@bindir@
+ 
+ all: wash reaver
+ 
+@@ -85,10 +87,10 @@
+ 	$(CC) $(CFLAGS) globule.c -c 
+ 
+ install: cleanbin
+-	if [ ! -d $(CONFDIR) ]; then mkdir -p $(CONFDIR); fi
+-	if [ ! -e $(CONFDIR)/reaver.db ]; then cp reaver.db $(CONFDIR)/reaver.db && chmod -R a+rw $(CONFDIR); fi
+-	if [ -e wash ]; then cp wash @bindir@/wash; fi
+-	if [ -e reaver ]; then cp reaver @bindir@/reaver; fi
++	if [ ! -d $(DESTDIR)/$(CONFDIR) ]; then mkdir -p $(DESTDIR)/$(CONFDIR); fi
++	if [ ! -e $(DESTDIR)/$(CONFDIR)/reaver.db ]; then cp reaver.db $(DESTDIR)/$(CONFDIR)/reaver.db && chmod -R a+rw $(DESTDIR)/$(CONFDIR); fi
++	if [ -e wash ]; then cp wash $(INSTALLDIR)/wash; fi
++	if [ -e reaver ]; then cp reaver $(INSTALLDIR)/reaver; fi
+ 
+ clean:
+ 	rm -f *~ *.o reaver wash
+@@ -102,7 +104,7 @@
+ 	rm -f Makefile config.h
+ 
+ cleanbin: 
+-	rm -f @bindir@/reaver @bindir@/wash @bindir@/walsh
++	rm -f $(INSTALLDIR)/reaver $(INSTALLDIR)/wash $(INSTALLDIR)/walsh
+ 
+ distclean: cleanbin clean
+-	rm -rf $(CONFDIR)
++	rm -rf $(DESTDIR)/$(CONFDIR)
