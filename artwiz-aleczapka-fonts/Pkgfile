@@ -21,6 +21,4 @@ build() {
   mkdir -p $PKG/usr/share/fonts/misc
   cp -a *.pcf.gz $PKG/usr/share/fonts/misc
 
-  fc-cache -fv $PKG/usr/share/fonts/misc
-
 }
