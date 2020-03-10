@@ -299,5 +299,6 @@ f:5fc99b54468cc5c9dcd0aa7a83290a34:hcxtools-35/Makefile.patch
 f:47fab1fc38243ff28f38c117a118187e:hcxtools-35/.footprint
 f:75a3264aeeb80ffd992ed90dd41a3f31:hcxtools-35/.signature
 f:7c68390dc79b552aa08a7dc050a06408:artwiz-aleczapka-fonts/Pkgfile
+f:742c9fc4ab729d878136dffaa03d264e:artwiz-aleczapka-fonts/post-install
 f:d4ebe42ad1cc68b1b6886de31af26b55:artwiz-aleczapka-fonts/.footprint
 f:1af3a6eb3b87aac8e26fa2468fa0385a:artwiz-aleczapka-fonts/.signature
