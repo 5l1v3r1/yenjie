@@ -27,6 +27,6 @@ build() {
   make
   make DESTDIR=$PKG install
 
-  chmod -R 644 $PKG/etc/${name} 
+  chmod -R 644 $PKG/usr/etc/${name} 
 
 }
