@@ -59,6 +59,7 @@ d:fcitx
 d:fcitx-configtool-gtk2
 d:fcitx-configtool-gtk3
 d:fcitx-qt5
+d:hcxtools
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -280,3 +281,6 @@ f:3eb40c3122bef5ef786e93243044ba14:fcitx-configtool-gtk3/.signature
 f:01b1cd3ff16799c5250710c73d346edb:fcitx-qt5/Pkgfile
 f:c6d5d895872a8e5fdcab059492398e88:fcitx-qt5/.footprint
 f:c0d69b2f8b9b70340b3ad61db4df35de:fcitx-qt5/.signature
+f:7275239d992f5605f978800b5e9fd847:hcxtools/Pkgfile
+f:ad420b6f2634cbc9f30e714da5d3a97f:hcxtools/.footprint
+f:435405d48e30c58212573aafeae77d3d:hcxtools/.signature
