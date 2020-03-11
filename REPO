@@ -64,6 +64,7 @@ d:reaver
 d:hcxdumptool
 d:hcxtools-35
 d:artwiz-aleczapka-fonts
+d:vokoscreen-ng
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -302,3 +303,6 @@ f:a5243a778c3784d118b8779cc380c652:artwiz-aleczapka-fonts/Pkgfile
 f:742c9fc4ab729d878136dffaa03d264e:artwiz-aleczapka-fonts/post-install
 f:d41d8cd98f00b204e9800998ecf8427e:artwiz-aleczapka-fonts/.footprint
 f:f9114fbcaea143ca3430c8ba8dddba50:artwiz-aleczapka-fonts/.signature
+f:e9be0e8f6a474ebaf5bc24b176164cf7:vokoscreen-ng/.footprint
+f:918d604352b865f8c75c4cd87b08df78:vokoscreen-ng/.signature
+f:972798e733177146b7971445e865755a:vokoscreen-ng/Pkgfile
