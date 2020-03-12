@@ -115,9 +115,9 @@ f:3c7eebe288c7a56525ca95f868eeb99f:rtl8812au-linux-driver/post-install
 f:35197e2f8e2cf7afce48500e1446ff75:rtl8812au-linux-driver/Pkgfile
 f:c6642c6540cec6bf620c3e059e08fb42:rtl8812au-linux-driver/.footprint
 f:d43d16811dea5726515f8ab80ad5b574:rtl8812au-linux-driver/README
-f:acf7309eee34dcaf00c50c6156c6430a:telegram-bin/Pkgfile
+f:603c61144e1cfc377022715b5a98e46f:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
-f:f80d1acc6617b8231a874795084123bd:telegram-bin/.signature
+f:d6a92df9923f22cbaf78a3f3e5982825:telegram-bin/.signature
 f:9418def7f66a8ab748047eb010159cc6:seamonkey-bin/.signature
 f:9c897c77272d136d287b76ec58f841ca:seamonkey-bin/Pkgfile
 f:5cca00030471fda860d3bdc736369a14:seamonkey-bin/.footprint
