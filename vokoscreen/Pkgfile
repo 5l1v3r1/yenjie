@@ -1,8 +1,8 @@
-# Description: 	Video Desktop Screen Recorder 
-# URL:         	http://linuxecke.volkoh.de/vokoscreen/vokoscreen.html 
+# Description: Video Desktop Screen Recorder 
+# URL:         http://linuxecke.volkoh.de/vokoscreen/vokoscreen.html 
 # Packager:    
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
-# Depends on: 	git qt5 alsa libX11 libv4l2 libv4lconvert libmp3lame0 xdg-utils lsof ffmpeg pulseaudio pulsaudio-utils 
+# Maintainer:  Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  git qt5 alsa libX11 libv4l2 libv4lconvert libmp3lame0 xdg-utils lsof ffmpeg pulseaudio pulsaudio-utils 
 
 name=vokoscreen
 version=2.5.8
@@ -13,8 +13,8 @@ build () {
 
   cd $name
 
-	qmake-qt5 
-	make
-	make DESTDIR=${PKG} install
+  qmake-qt5 
+  make
+  make DESTDIR=${PKG} install
 
 }
