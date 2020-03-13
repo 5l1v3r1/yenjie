@@ -13,8 +13,10 @@ build () {
 
   cd $name-master
 
+  export INSTALL_ROOT=$PKG
+
   qmake-qt5 
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR=$PKG install
 
 }
