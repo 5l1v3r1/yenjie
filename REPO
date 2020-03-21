@@ -61,10 +61,14 @@ d:fcitx-configtool-gtk3
 d:fcitx-qt5
 d:hcxtools
 d:reaver
+d:gnucash
 d:hcxdumptool
 d:hcxtools-35
 d:artwiz-aleczapka-fonts
 d:vokoscreen-ng
+d:googletest
+d:libdbi
+d:libdbi-drivers
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
 f:81469ac1f615000f30c7c689bd2ee1bc:aircrack-ng/.signature
 f:250dafce15a70b07b13c99a3834b4c38:aircrack-ng/Pkgfile
@@ -292,6 +296,9 @@ f:435405d48e30c58212573aafeae77d3d:hcxtools/.signature
 f:8960e4088c670bffef461701a5c8828b:reaver/Pkgfile
 f:43b3440d1487f9740ff46d44319c6806:reaver/.footprint
 f:e6ae6f18b0df90d182730d6ec4b98456:reaver/.signature
+f:6d6215e5d13d98e784ea2dd7701ba1d8:gnucash/.footprint
+f:bf85d8bb07dd6c6034dc63e74c87dfff:gnucash/Pkgfile
+f:533a9ff8b53b3f98305e9a1717403d71:gnucash/.signature
 f:31c954f86b873277c43c57e765b06ce1:hcxdumptool/Pkgfile
 f:cc06598a863a9c372698779b479a7dba:hcxdumptool/.footprint
 f:8c410ed242344d0fb25ba5cf70ce645c:hcxdumptool/.signature
@@ -306,3 +313,12 @@ f:f9114fbcaea143ca3430c8ba8dddba50:artwiz-aleczapka-fonts/.signature
 f:e9be0e8f6a474ebaf5bc24b176164cf7:vokoscreen-ng/.footprint
 f:918d604352b865f8c75c4cd87b08df78:vokoscreen-ng/.signature
 f:972798e733177146b7971445e865755a:vokoscreen-ng/Pkgfile
+f:0b92d5aad1c8f21099676c0a49af025e:googletest/.footprint
+f:25ee0414ee2f46b6d9b944bd4bf4ae5f:googletest/Pkgfile
+f:7793c4ad3df2c4332a9e26f16680b83c:googletest/.signature
+f:056530ebd3ec819a38ebf4c7bc21fb73:libdbi/.footprint
+f:b0a5a4b8bb85a16fbcab10208f37e247:libdbi/Pkgfile
+f:8c6c40704106b646f576fbff38b97fc8:libdbi/.signature
+f:29b3969f74a0d9c72542de4fac7fb34b:libdbi-drivers/.footprint
+f:5ae79d93ff9cd15f70ffc9a39f9daddc:libdbi-drivers/Pkgfile
+f:2385afd86530ac8cf38b453386eab59b:libdbi-drivers/.signature
